@@ -22,11 +22,7 @@
 .project__data {
     position: absolute;
     bottom: 0%;
-<<<<<<< HEAD
     bottom: -100%;
-=======
-    // bottom: -100%;
->>>>>>> 1459aaf0a4d0d77d128d72a94cfe1e8da816443d
     width: 100%;
     height: 100%;
     margin: 0;
@@ -103,15 +99,9 @@
     padding: 1em;
 }
 
-<<<<<<< HEAD
 .project__img:hover .project__data {
     bottom: 0;
 }
-=======
-// .project__img:hover .project__data {
-//     bottom: 0;
-// }
->>>>>>> 1459aaf0a4d0d77d128d72a94cfe1e8da816443d
 
 .hide {
     display: none;
