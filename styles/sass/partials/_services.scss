@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+/* My services section */
+
+.my-services {
+    background-image: url(../assets/services-bg.jpg);
+    background-color: rgb(0, 0, 0, 0.8);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: $clr-light;
+}
+
+.title {
+    color: $clr-accent;
+    position: relative
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0 auto;
+    background: $clr-light;
+    opacity: 0.25;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}

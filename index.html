@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dev Renata</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<!--Add Boxicons-->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!--Add Google Fonts-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;900&family=Cuprum:wght@400;700&family=Noto+Sans&display=swap"
+		rel="stylesheet">
+	<!--Add Stylesheet-->
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Dev Portfolio</title>
+	<!--Add Favicon-->
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+	<header>
+		<div class="top-row">
+			<div class="switch">
+				<div class="flicker"></div>
+				<div class="moon"></div>
+			</div><!--End Switch-->
+			<nav>
+				<div class="hamburger" onclick="show()">
+					<i class='bx bx-menu' onclick="changeIcon(this)"></i>
+				</div><!--End Hamburger-->
+				<div class="navigation">
+					<ul class="nav__list">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">My Services</a></li>
+						<li><a href="#about">About me</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#project">Projects</a></li>
+					</ul><!--End Nav__List-->
+				</div><!--End Navigation-->
+			</nav><!--End Nav-->
+	</header>
+	<!--Introduction-->
+	<section class="intro" id="home">
+		<h1 class="title-intro">
+			<span class="highlight">Hi,I am <strong>Renata!</strong></span>
+		</h1><!--End Title-Intro-->
+		<p>Front-end developer with SEO, Google Analytics, and email marketing integration experience. I have been
+			freelancing for the past year developing WordPress websites. Currently, open to work
+			opportunities.
+		</p>
+		<p>
+			For fun, I practice yoga 🧘‍♀️ and am also a certified yoga
+			teacher.<span class="new-line">
+				Having traveled around the world ✈️ I have many stories to share.</span> I also love spending time with
+			my
+			family.
+		</p>
+		<div class="socials">
+			<div class="flex">
+				<img src="assets/dev-renata-01.png" alt="a picture of Renata Reinartz smiling" class="intro__img">
+				<ul class="social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://www.linkedin.com/in/renata1026/"
+							aria-label="LinkedIn profile">
+							<i class='bx bxl-linkedin-square'></i>
+						</a><!--End Social-List__Link-->
+					</li><!--End Social-List__Item-->
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://github.com/renata1026" aria-label="Github profile">
+							<i class='bx bxl-github'></i>
+						</a><!--End Social-List__Link-->
+					</li><!--End Social-List__Item-->
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://calendly.com/rcreinartz/30min" aria-label="Calendly">
+							<i class='bx bxs-calendar'></i>
+						</a><!--End Social-List__Link-->
+					</li><!--End Social-List__Item-->
+				</ul><!--End Social-List-->
+			</div><!--End Flex-->
+			<a class="btn-dark" href="#about" aria-label="Find out more">Find Out
+				More</a>
+		</div><!--End Socials-->
+	</section><!--End Home-->
+	<!-- My Services -->
+	<section class="my-services" id="services">
+		<h2 class="title-services" id="title-accent">What I do</h2>
+		<div class="service">
+			<h3>Development</h3>
+			<p>Happy to develop your custom site using CSS, HTML, and JavaScript coding following SEO best practices.
+			</p>
+		</div> <!-- End Service -->
+		<div class="service">
+			<h3>WordPress</h3>
+			<p>Gain more wellness clients with a beautifully tailored website to your niche! I am happy to build your
+				custom WordPress site, or we can use a template for a more budget friendly option. </p>
+		</div> <!-- End Service -->
+		<div class="service">
+			<h3>Extra Services</h3>
+			<p>From setting up your Google Analytics, or linking your email marketing
+				system to your website, I can provide custom services that cater to your needs.</p>
+		</div> <!-- End Service -->
+		<a class="btn" href="#project">My Work</a>
+	</section><!-- End My-Services -->
+	<!---- About Me -->
+	<section class="about-me" id="about">
+		<div class="about-me__body">
+			<h2 class="title-about-me" id="title-dark">Who I am</h2>
+			<p class="greeting">It' s nice to meet you! I'm currently enrolled in the <a class="links"
+					href="https://junocollege.com">Juno College of Technology </a> accelerated Bootcamp and
+				have just completed a Web Development, Javascript
+				course, and responsive development course.
+			</p><!-- End Greeting -->
+			<p class="qualifications">Furthermore, I have a
+				Bachelor of Management degree majoring in Accounting and was a CPA for over 10 years.
+				<span class="new-line">For fun, I practice yoga 🧘‍♀️ and am also a certified yoga
+					teacher.
+					Having traveled around the world ✈️ I have many stories to share. I also love
+					spending time with my
+					family. </span>
+			</p><!-- End Qualifications -->
+			<p class="facts"><strong>Why did you become a web developer?</strong>
+				Tech is my jam. I’ve always enjoyed tinkering with spreadsheets, automating simple
+				processes, and
+				digging into the nitty-gritty of any system I use; it’s a passion that has stayed with
+				me since my
+				teenage years.
+				When my husband struggled to build an online presence for his wellness business, I was
+				the one who
+				finally took matters into my own hands. (That’s how I got started building websites).
+			</p><!-- End Facts -->
+			<div class="image">
+				<img src="./assets/dev-renata-02.png" alt="a picture of Renata Reinartz smiling" class="about-me__img">
+			</div><!-- End Image -->
+			<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's
+			resume" target="_blank" rel="noopener noreferer">CV
+			</a>
+			<a class="btn-dark" href="mailto:renata.codes.dev@gmail.com">Contact</a>
+		</div> <!-- End About Me__Body -->
+	</section><!-- End About Me__Section  -->
+	<!---- Testimonial -->
+	<section class="slider" id="testimonials">
+		<h2 class="title-tes" id="title-accent">Client Love</h2>
+		<div class="slide">
+			<img src="./assets/josie-peterson.jpg" alt="A picture of Josie Peterson">
+			<p>I can't thank you enough for all you've done. Not only have you given me a website that
+				I'm
+				proud of, but
+				I'm forever grateful to you for helping me FINALLY find my niche. Add to that the
+				help you provided regarding Instagram and you have touched just about every area of my
+				business.I'm so
+				thrilled we found each other and am beyond grateful for everything you've done!</p>
+			<h4>Josie Peterson</h4>
+			<p class="position">Founder of <a href="https://theambitiousassistant.com"
+					aria-label="The Ambitious Assistant">The Ambitious
+					Assistant</a></p>
+		</div><!-- End Slide 1-->
+		<div class="slide">
+			<img src="./assets/linda-barutha.jpg" alt="A picture of Linda Barutha">
+			<p>Renata is an awesome person who does fantastic work! She worked in my business for about
+				6
+				months
+				designing websites, creating social media graphics and posts, and implementing SEO
+				strategies that she
+				quickly became
+				someone I could completely rely on to not only get the job done, but to always be
+				focused on
+				the
+				client's happiness with
+				her work.</p>
+			<h4>Linda Barutha</h4>
+			<p class="position">Founder of <a href="https://lindabarutha.com" aria-label="Linda Barutha">Linda
+					Barutha</a></p>
+		</div><!-- End Slide 2-->
+		<div class="slide">
+			<img src="./assets/nina-machado.jpg" alt="A picture of Nina Machado">
+			<p>What an amazing job on my website! Working with Renata was easy and she nailed my vision
+				and
+				brand! She
+				produced quick results and helped me get my site up
+				and running before my big event! Thank you Renata for being wonderful to work with and
+				giving me a
+				fabulous website!</p>
+			<h4>Nina Machado</h4>
+			<p class="position">Founder of <a href="https://www.liftyourvibe.ca" aria-label="Lift Your Vibe">Lift Your
+					Vibe</a></p>
+		</div><!-- End Slide 3-->
+		<div class="slide">
+			<img src="./assets/shelby-smith.png" alt="A picture of Shelby Smith">
+			<p>Renata is amazing to work with. She did an incredible job and created a professional
+				website
+				for my
+				business!</p>
+			<h4>Shelby Smith</h4>
+			<p class="position">Founder of <a href="https://www.styledbysasla.com" aria-label="Styled By SAS">Styled By
+					SAS</a></p>
+		</div><!-- End Slide 4-->
+		<div class="slide">
+			<img src="./assets/tara-reid.jpg" alt="A picture of Tara Reid">
+			<p>Renata is wonderful to work with and is very skilled in multiple areas. She would be an
+				asset
+				to any team
+				or business
+				that wants help with their website, SEO, or social media marketing. I definitely
+				recommend
+				working with
+				her if you have
+				the chance!</p>
+			<h4>Tara Reid</h4>
+			<p class="position">Founder of <a href="https://thetarareid.com" aria-label="Tara Reid">Tara Reid</a></p>
+		</div><!-- End Slide 5-->
+		<div class="slide">
+			<img src="./assets/sandra-martin.png" alt="A picture of Sandra Martin">
+			<p>Renata is such a pleasure to work with. Not only is her skill set impressive, she always
+				goes
+				above and
+				beyond. She is
+				amazing at communicating through out the entire process as well as making
+				recommendations we
+				would not
+				have thought
+				about. I look forward to continuing to work with Renata in the future!</p>
+			<h4>Sandra Martin</h4>
+			<p class="position">Founder of <a href="https://www.herbusinesssociety.com/" aria-label="Sandra Martin">her
+					Business
+					Society</a></p>
+		</div><!-- End Slide 6-->
+		<div class="indicators">
+			<button class="next" id="next"></button>
+			<button class="prev" id="prev"></button>
+		</div><!-- End Indicators -->
+	</section><!-- End Slider -->
+	<!-- Toolkit -->
+	<section class="tools" id="toolkit">
+		<h2 class="title-tools" id="title-dark">My toolkit</h2>
+		<div class="icons">
+			<div class="grid-container">
+				<div class="icon">
+					<i class='bx bxl-github'></i>
+					<p>GIT</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-wordpress'></i>
+					<p>WordPress</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-html5'></i>
+					<p>HTML5</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-css3'></i>
+					<p>CSS</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-sass'></i>
+					<p>SASS</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-netlify'></i>
+					<p>Netlify</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-javascript'></i>
+					<p>ES6</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-react'></i>
+					<p>REACT</p>
+				</div><!-- End Icon -->
+				<div class="icon">
+					<i class='bx bxl-firebase'></i>
+					<p>Firebase</p>
+				</div><!-- End Icon -->
+				<div class="icon none">
+					<i class='bx bxl-mailchimp'></i>
+					<p>Mailchimp</p>
+				</div><!-- End Icon -->
+			</div><!-- End Grid-Container -->
+		</div><!-- End Icons -->
+	</section><!-- End Toolkit -->
+	<!-- My Project-->
+	<section class="project-section" id="project">
+		<h2 class="title-project" id="title-dark">Recent Projects</h2>
+		<div class="project__container bd-grid">
+			<div class="project__img">
+				<img src="assets/portfolio-one.png" alt="Project 1">
+				<div class="project__data">
+					<h4 class="project__title">Animal Match App</h4>
+					<p class="hide">This lighthearted app matches an animal photo with the user's personality using the
+						Pexels API. Developed and designed collaboratively. </p>
+					<div class="icon stack">
+						<i class='bx bxl-html5'></i>
+						<p>HTML</p>
+						<i class='bx bxl-sass'></i>
+						<p>SASS</p>
+						<i class='bx bxl-javascript'></i>
+						<p>ES 6</p>
+					</div><!-- End Icon Stack -->
+					<div class="link-btn">
+						<a class="project-btn" id="netlify-btn" href="https://animal-match.netlify.app/" target="_blank"
+							class="project__link" aria-label="Animal Match Site"><i
+								class='bx bx-link-alt bx-icon'></i></a>
+						<a class="project-btn" id="git-btn" href="https://github.com/renata-fiona/animal-match-app"
+							aria-label="Animal Match Code" target="_blank" class="project__link">
+							<i class='bx bx-code bx-icon'></i></a>
+					</div><!-- End Link -->
+				</div><!-- End Project__Data -->
+			</div><!-- End Project__Img-->
+			<div class="project__img">
+				<img src="assets/portfolio-two.png" alt="Project 2">
+				<div class="project__data">
+					<h4 class="project__title">Makeup App</h4>
+					<p class="hide">An elegantly designed e-commerce website using React and the makeup API. Includes a
+						scroll to top feature.</p>
+					<div class="icon stack">
+						<i class='bx bxl-html5'></i>
+						<p>HTML</p>
+						<i class='bx bxl-sass'></i>
+						<p>SASS</p>
+						<i class='bx bxl-javascript'></i>
+						<p>ES 6</p>
+					</div><!-- End Icon Stack -->
+					<div class="link-btn">
+						<a class="project-btn" id="netlify-btn" a href="https://makeup4life.netlify.app/""
+							aria-label=" Makeup Store" target="_blank" class="project__link"><i class='bx bx-link-alt bx-icon'></i></a>
+						<a class="project-btn" id="git-btn"
+							href="https://github.com/renata1026/renataReinartzProjectThree" aria-label="Makeup Code"
+							target="_blank" class="project__link">
+							<i class='bx bx-code'></i></a>
+					</div><!-- End Link -->
+				</div><!-- End Project__Data -->
+			</div><!-- End Project__Img-->
+			<div class="project__img">
+				<img src="assets/portfolio-three.png" alt="Project 3">
+				<div class="project__data">
+					<h4 class="project__title">Find your podcast</h4>
+					<p class="hide">A fun app where the user selects the length of their podcast and genre of podcast
+						using the listen notes API.</p>
+					<div class="icon stack">
+						<i class='bx bxl-react'></i>
+						<p>React</p>
+						<i class='bx bxl-sass'></i>
+						<p>SASS</p>
+						<i class='bx bxl-firebase'></i>
+						<p>Firebase</p>
+					</div><!-- End Icon Stack -->
+					<div class="link-btn">
+						<a class="project-btn" id="netlify-btn" href="https://podcast-planner-app.netlify.app/"
+							aria-label="Podcast Planner site" target="_blank" class="project__link">
+							<i class='bx bx-link-alt bx-icon'></i></a>
+						<a class="project-btn" id="git-btn" a href="https://github.com/Podcast-Planner/podcast-planner"
+							aria-label="Podcast Planner code" target="_blank" class="project__link">
+							<i class='bx bx-code bx-icon'></i></a>
+					</div><!-- End Link -->
+				</div><!-- End Project__Data -->
+			</div><!-- End Project__Img-->
+			<div class="project__img">
+				<img src="assets/portfolio-four.png" alt="Project 4">
+				<div class="project__data">
+					<h4 class="project__title">Birds of Paradise</h4>
+					<p class="hide">Are you a bird lover? This eye-catching landing page is for you. A landing page that
+						is functional and responsive.</p>
+					<div class="icon stack">
+						<i class='bx bxl-html5'></i>
+						<p>HTML</p>
+						<i class='bx bxl-css3'></i>
+						<p>CSS</p>
+						<i class='bx bxl-react'></i>
+						<p>React</p>
+					</div><!-- End Icon Stack -->
+					<div class="social-icons">
+						<div class="link-btn">
+							<a class="project-btn" id="netlify-btn" href="https://beautiful-birds.netlify.app/"
+								aria-label="Beautiful Birds site" target="_blank" class="project__link">
+								<i class='bx bx-link-alt bx-icon'></i></a>
+							<a class="project-btn" id="git-btn" a href="https://github.com/renata1026/birds-of-paradise"
+								aria-label="Beautiful Birds Code" target="_blank" class="project__link">
+								<i class='bx bx-code bx-icon'></i></a>
+						</div><!-- End Link -->
+					</div><!-- End Social-Icons -->
+				</div><!-- End Project__Data -->
+			</div><!-- End Project__Img-->
+		</div><!--End Project__Container Bd-Grid-->
+	</section><!--End Project__Section-->
+	<!--Footer-->
+	<footer>
+		<section class="footer">
+			<h2 class="title-footer" id="title-accent">Get In Touch</h2>
+			<ul class="social-list footer-social">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/renata1026/"
+						aria-label="LinkedIn Profile">
+						<i class='bx bxl-linkedin-square'></i>
+					</a>
+				</li><!--End Social-List__Item-->
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/renata1026" aria-label="GitHub Profile">
+						<i class='bx bxl-github'></i>
+					</a>
+				</li><!--End Social-List__Item-->
+				<li class="social-list__item">
+					<a class="social-list__link"
+						href="https://calendly.com/renata-reinartz/30-min-discovery-consultation" aria-label="Calendly">
+						<i class='bx bxs-calendar'></i>
+					</a>
+				</li><!--End Social-List__Item-->
+			</ul><!--End Social-List Footer-Social-->
+			<p>I 🤍 meeting new people. Please feel free to send me an email or book my calendar for a chat.</p>
+			<a class="btn" href="mailto:renata.codes.dev@gmail.com">Contact Me</a>
+		</section>
+		<p class="copyright">Designed and Developed By Renata Reinartz for <a href="https://junocollege.com/">Juno
+				College</p></a>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>

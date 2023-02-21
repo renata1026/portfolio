@@ -1,0 +1,86 @@
+@use "variables" as *;
+
+/*Switch */
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $clr-dark;
+    position: relative;
+    top: -10px;
+}
+
+.btn {
+    background-color: $clr-light;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $clr-light;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow:
+        inset 4px 4px 4px var(--clr-light),
+        inset -4px -4px 4px var(--clr-dark);
+}
+
+.dark,
+.dark #toolkit {
+    background-color: $clr-dark;
+    transition: 0.3s;
+    color: $clr-light;
+}
+
+.dark .greeting.a.links,
+.dark #title-accent,
+.dark #title-dark.title-tools,
+.dark #title-dark.title-about-me,
+.dark.title-tools,
+.dark .icon,
+.dark .project__link,
+.dark .project__title,
+.dark .desc,
+.dark .stack {
+    color: $clr-accent;
+}
+
+.dark.title-services,
+.dark .title-project,
+.dark.title-footer {
+    color: $clr-dark;
+}
+
+.dark #project {
+    background-color: $clr-accent;
+}
+
+.dark .project__data {
+    background: rgba(0, 0, 0, .8);
+}
+
+.dark .links,
+.dark.slide a {
+    color: $clr-btn-accent;
+}
+
+.dark .switch {
+    background-color: $clr-btn-accent;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 $clr-light;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}

@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+/* Toolkit section */
+#toolkit {
+    background-color: $clr-accent;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 50px;
+}
+
+.icons {
+    list-style: none;
+    font-size: $fs-h2;
+    color: $clr-dark;
+    padding-left: 0;
+    margin: 0;
+}
+
+.icons p {
+    font-size: $fs-body;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bx bxl-netlify {
+    display: none;
+}

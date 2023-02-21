@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+footer {
+    background-color: $clr-dark;
+    color: $clr-dark;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 5em 0 0 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer__link {
+    font-weight: $fw-bold;
+    text-decoration: none;
+}
+
+
+a.social-list__link {
+    color: $clr-btn-accent;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+    color: $clr-accent;
+    text-decoration: underline;
+}
+
+footer p {
+    color: $clr-light;
+}
+
+footer span,
+.new-line {
+    display: block;
+}
+
+.copyright {
+    background-color: $clr-accent;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    color: $clr-dark;
+}
+
+.copyright a {
+    color: $clr-dark;
+}

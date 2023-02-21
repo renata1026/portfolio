@@ -1,0 +1,90 @@
+@use "variables" as *;
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    z-index: 10;
+    min-height: 150px;
+}
+
+a .hamburger {
+    cursor: pointer;
+}
+
+/*Navigation Menu */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    width: 100%;
+    height: 100vh;
+    background-color: $clr-accent;
+    transition: .5s;
+    z-index: 10;
+}
+
+.navigation ul li {
+    color: $clr-dark;
+    font-size: $fs-nav;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: $p-1;
+    line-height: 1;
+    border-bottom: 1pt solid $clr-dark;
+    margin-top: 3em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $clr-dark;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: $clr-btn-accent;
+}
+
+.hamburger {
+    font-size: 3em;
+    cursor: pointer;
+    color: $clr-btn-accent;
+    display: block;
+    top: 3%;
+    left: 85%;
+
+}
+
+.hamburger .bx {
+    font-size: 4rem;
+}
+
+.bx-x {
+    position: absolute;
+    z-index: 20;
+    right: .3em;
+    top: 30px;
+    color: $clr-dark;
+}
+
+.navigation.active {
+    right: 0;
+
+}
+
+.close {
+    color: $clr-dark;
+}

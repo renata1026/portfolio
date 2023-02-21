@@ -1,0 +1,120 @@
+@use "variables" as *;
+
+/* ----- Project----- */
+.project__container {
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.project__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    width: 90%;
+}
+
+.project__img img {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.project__data {
+    position: absolute;
+    bottom: 0%;
+    // bottom: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0.5em;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(124, 231, 90, 0.8);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#netlify-btn,
+#git-btn {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 50px #ccc;
+
+    .bx {
+        font-size: 2rem;
+    }
+}
+
+#netlify-btn:hover,
+#git-btn:hover,
+#netlify-btn:focus,
+#git-btn:focus {
+    background-color: $clr-btn-accent;
+
+}
+
+.icon.stack p {
+    font-size: 1rem;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__link,
+#link {
+    padding: 0;
+    margin-left: 0.2em;
+    margin: bottom 0;
+}
+
+.project__title {
+    font-size: $fs-h4;
+    color: $clr-dark;
+    margin: 0 0 0.5em 0;
+}
+
+.desc {
+    color: $clr-dark;
+    text-align: center;
+    padding: 1em;
+}
+
+// .project__img:hover .project__data {
+//     bottom: 0;
+// }
+
+.hide {
+    display: none;
+}
+
+.stack {
+    display: flex;
+    color: $clr-dark;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2em;
+}
+
+.icon .bx {
+    font-size: $fs-icon;
+}
