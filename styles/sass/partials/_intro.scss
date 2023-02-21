@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.intro__img,
+.about-me__img {
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    height: 300px;
+    width: 300px;
+}
+
+.about-me__img {
+    border-radius: 50%;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease-in-out;
+}
+
+.contact-me a {
+    font-size: 2em;
+    color: $clr-dark;
+    margin-left: 1em;
+    padding: .1em;
+    cursor: pointer;
+}
+
+.social-list__item {
+    list-style: none;
+}
+
+.social-list {
+    padding-left: 0;
+}
+
+.bx {
+    font-size: $fs-icon;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,110 @@
+@use "variables" as *;
+
+/* Testimonial Slider */
+.slider {
+    width: 100%;
+    height: 800px;
+    background-image: url(../assets/desk.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: $clr-light;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+}
+
+.slide {
+    transition: all 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.slide p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: $mb-2;
+    width: 80%;
+}
+
+p.position {
+    padding: 0;
+}
+
+.slide h4 {
+    margin: 0;
+}
+
+.slide a {
+    color: $clr-btn-accent;
+}
+
+#next,
+#prev {
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: $bs;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: $fs-body;
+}
+
+.prev {
+    top: 50%;
+    left: 2%;
+}
+
+.next {
+    top: 50%;
+    right: 2%;
+}
+
+.next::after,
+.prev::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.next::after {
+    background-image: url(../assets/icon-next.svg);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+
+.prev::after {
+    background-image: url(../assets/icon-prev.svg);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,86 @@
+@use "variables" as *;
+
+@media(min-width:500px) {
+    .navigation {
+        width: 350px;
+        height: 100vh;
+        display: inline;
+    }
+}
+
+@media (min-width:800px) {
+
+    .project__container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem
+    }
+
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 50px;
+    }
+
+    .bx bxl-netlify {
+        display: inline;
+    }
+
+    .icon.none {
+        display: none;
+    }
+
+}
+
+@media (min-width:1000px) {
+    h1 {
+        font-size: $dt-fs-h1;
+    }
+
+    h2 {
+        font-size: $dt-fs-h2;
+    }
+
+    h3,
+    .icons {
+        font-size: $dt-fs-h3;
+    }
+
+    p {
+        font-size: $dt-fs-body;
+    }
+
+    .icon {
+        font-size: $fs-h2;
+    }
+
+    .project__title {
+        font-size: $dt-fs-h4;
+    }
+
+    .hide {
+        display: inline;
+        padding: 0 .5em;
+        color: $clr-dark;
+        font-size: $dt-fs-body;
+    }
+
+    .dark .hide {
+        color: $clr-accent;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .navigation ul li {
+        text-align: right;
+    }
+
+    .bx {
+        font-size: $dt-fs-icon;
+    }
+}

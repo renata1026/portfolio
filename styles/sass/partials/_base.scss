@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+/*General Styles */
+
+body {
+    background: $clr-light;
+    color: $clr-dark;
+    margin: 0;
+    font-family: $ff-primary;
+    font-size: $fs-body;
+    line-height: 1.2;
+}
+
+section {
+    padding: 5em 2em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: $fw-bold;
+}
+
+/* Buttons*/
+.btn {
+    border: $clr-dark 1px solid;
+}
+
+.btn-dark {
+    border: $clr-btn-accent 1px solid;
+    box-sizing: border-box;
+    color: $clr-dark;
+}
+
+.btn,
+.btn-dark {
+    background: $clr-btn-accent;
+    display: inline-block;
+    padding: 1em 2.5em;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: $fw-bold;
+    transition: transform 200ms ease-in-out;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-dark:hover,
+.btn-dark:focus {
+    transform: scale(1.1);
+}
+
+a {
+    color: $clr-dark;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#link {
+    display: inline-block;
+    font-size: $fs-body;
+    font-weight: $fw-bold;
+}
+
+.intro__img,
+.about-me__img {
+    margin-bottom: $mb-2;
+}
