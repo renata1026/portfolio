@@ -1030,6 +1030,10 @@ footer {
   text-align: center;
 }
 
+.section .footer {
+  padding: 0;
+}
+
 .footer {
   padding: 5em 2em;
 }
