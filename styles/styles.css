@@ -279,7 +279,7 @@ body {
   line-height: 1.2;
 }
 
-section {
+.padding {
   padding: 5em 2em;
   text-align: center;
 }
@@ -1028,10 +1028,6 @@ footer {
   background-color: #000;
   color: #000;
   text-align: center;
-}
-
-.section .footer {
-  padding: 0;
 }
 
 .footer {
