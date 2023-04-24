@@ -15,15 +15,15 @@
     position: relative
 }
 
-.title::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0 auto;
-    background: $clr-light;
-    opacity: 0.25;
-}
+// .title::after {
+//     content: '';
+//     display: block;
+//     width: 2em;
+//     height: 1px;
+//     margin: 0 auto;
+//     background: $clr-light;
+//     opacity: 0.25;
+// }
 
 .service {
     max-width: 500px;

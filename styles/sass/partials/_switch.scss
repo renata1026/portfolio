@@ -35,7 +35,13 @@
     color: $clr-light;
 }
 
-.dark .greeting.a.links,
+.dark .greeting,
+.dark .qualifications,
+.dark .facts,
+.dark .hide{
+    color:$clr-light;
+}
+
 .dark #title-accent,
 .dark #title-dark.title-tools,
 .dark #title-dark.title-about-me,
@@ -44,18 +50,24 @@
 .dark .project__link,
 .dark .project__title,
 .dark .desc,
-.dark .stack {
+.dark .stack,
+.dark .title-project
+ {
     color: $clr-accent;
 }
 
 .dark.title-services,
-.dark .title-project,
 .dark.title-footer {
     color: $clr-dark;
 }
 
 .dark #project {
+    background-color: $clr-dark;
+}
+.dark #project-btn,
+.dark #contact-btn{
     background-color: $clr-accent;
+    color:$clr-dark;
 }
 
 .dark .project__data {

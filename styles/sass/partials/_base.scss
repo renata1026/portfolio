@@ -26,19 +26,23 @@ strong {
 }
 
 /* Buttons*/
-.btn {
+.btn,
+.btn-dark {
     border: $clr-dark 1px solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 15px;
+    border-radius: 100px;
 }
 
 .btn-dark {
-    border: $clr-btn-accent 1px solid;
-    box-sizing: border-box;
-    color: $clr-dark;
+    color: $clr-light;
 }
 
 .btn,
 .btn-dark {
-    background: $clr-btn-accent;
+    background: $clr-dark;
     display: inline-block;
     padding: 1em 2.5em;
     font-size: .8rem;
@@ -49,8 +53,15 @@ strong {
     scroll-behavior: smooth;
     text-decoration: none;
     cursor: pointer;
+    width:13em;
+    max-width:40%;
 }
-
+.span{
+margin-left:15px;
+display: block;
+width: 29px;
+height: 29px;
+}
 .btn:hover,
 .btn:focus,
 .btn-dark:hover,

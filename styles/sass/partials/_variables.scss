@@ -1,10 +1,10 @@
 /* site fonts */
-$ff-primary: 'Catamaran', sans-serif;
-$ff-secondary: 'Noto Sans', sans-serif;
+$ff-primary: 'Roboto',sans-serif;
+$ff-secondary: 'Italiana',serif;
 
 /*font weight */
-$fw-reg: 300;
-$fw-bold: 900;
+$fw-reg: 400;
+$fw-bold: 700;
 
 /*font colors */
 $clr-light: #fff;
@@ -15,9 +15,9 @@ $clr-btn-accent: #e75a7c;
 // #e75a7c
 /* font size */
 $fs-h1: 3rem;
-$fs-h2: 2.25rem;
-$fs-h3: 1.8rem;
-$fs-body: 1.3rem;
+$fs-h2: 2rem;
+$fs-h3: 1.3rem;
+$fs-body: 1.1rem;
 $fs-h4: 1.5rem;
 $fs-nav: 1.5rem;
 $fs-icon: 1.8rem;
@@ -38,9 +38,9 @@ $p-1: .5em;
 $p-2: 1em;
 
 /*desktop font size*/
-$dt-fs-h1: 4.5rem;
-$dt-fs-h2: 3.75rem;
-$dt-fs-h3: 2.3rem;
+$dt-fs-h1: 4rem;
+$dt-fs-h2: 2.25rem;
+$dt-fs-h3: 1.5rem;
 $dt-fs-h4: 1.8rem;
-$dt-fs-body: 1.5rem;
+$dt-fs-body: 1.25rem;
 $dt-fs-icon: 2.5rem;

@@ -6,6 +6,7 @@ h2,
 h3 {
     margin: 0;
     text-align: center;
+    font-weight:$fw-bold;
 }
 
 h1 {
@@ -21,28 +22,38 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-#title-dark {
+h4{
+    letter-spacing:2px;
+}
+h4.project__title{
+    margin-top:0;
+}
+p {
+font-weight:$fw-reg;
+}
+#title-dark,
+.title-project {
     margin-bottom: 0.5em;
     border-bottom: 0;
     width: 100%;
     color: $clr-dark;
 }
 
-#title-dark {
+#title-dark,
+.title-project {
     color: $clr-dark;
     position: relative
 }
 
-#title-dark::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0 auto;
-    background: $clr-dark;
-    opacity: 0.25;
-}
+// #title-dark::after {
+//     content: '';
+//     display: block;
+//     width: 2em;
+//     height: 1px;
+//     margin: 0 auto;
+//     background: $clr-dark;
+//     opacity: 0.25;
+// }
 
 #title-accent {
     margin-bottom: 0.5em;
@@ -56,15 +67,15 @@ h3 {
     position: relative
 }
 
-#title-accent::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0 auto;
-    background: $clr-accent;
-    opacity: 0.25;
-}
+// #title-accent::after {
+//     content: '';
+//     display: block;
+//     width: 2em;
+//     height: 1px;
+//     margin: 0 auto;
+//     background: $clr-accent;
+//     opacity: 0.25;
+// }
 
 .highlight {
     font-weight: $fw-reg;

@@ -10,6 +10,58 @@
 
 @media (min-width:800px) {
 
+   .top-row{
+    padding:0 8em;
+   }
+    .intro,.about-me__body{
+    display:flex;
+    margin-top:6.5em;
+   }
+   .flex, img.intro__img{
+    justify-content: flex-end;
+   }
+   .flex-btn{
+    display:flex;
+    justify-content: flex-start;
+    gap:1.5em;
+   }
+   .intro__img,.about-me__img{
+    margin:0;
+   }
+   .title-intro,
+   .title-about-me{
+    text-align:left;
+   }
+
+    .home-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    }
+
+    .home-container.left-col {
+    grid-column: 1 / 2;
+    }
+
+    .home-container.right-col {
+    grid-column: 2 / 3;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    }
+
+    .container.left-col {
+    grid-column: 1 / 2;
+    }
+
+    .container.right-col {
+    grid-column: 2 / 3;
+    }
+
+    h1,.left-col{
+        text-align:left;
+    }
     .project__container {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 5rem
@@ -22,7 +74,7 @@
 
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 0 50px;
+        gap: 1em;
     }
 
     .bx bxl-netlify {
@@ -32,9 +84,67 @@
     .icon.none {
         display: none;
     }
+    .padding {
+    padding: 10em 8em;
+    text-align: center;
+    }
+    .about-me.padding{
+    padding-top:0;
+    }
+    .padding,
+    .title-services,
+    .service h3,
+    #title-accent,
+    #title-dark,
+    .title-project{
+        text-align: left;
+    }
 
+    .title-footer{
+        text-align:center;
+    }
+    #title-accent,
+    #title-dark,
+    .title-project{
+        margin-bottom: 3.75rem;
+    }
+
+    .services{
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        gap:1.5em;
+    }
+
+    .service{
+        margin: 0 auto;
+        height: 100%;
+        min-width: 300px;
+        color: black;
+        background: white;
+        padding: 1em 2em;
+        opacity: 0.8;
+        border-radius:1%;
+    }
+
+    .slide p{
+        width:50%;
+    }
+
+    .stack{
+        align-items:center;
+    }
+
+    .stack icon{
+        font-size:1.2rem;
+    }
+    .none {
+        display: none;
+    }
+
+    .project__data{
+        align-items: flex-start;
+    }
 }
-
 @media (min-width:1000px) {
     h1 {
         font-size: $dt-fs-h1;
@@ -53,23 +163,21 @@
         font-size: $dt-fs-body;
     }
 
-    .icon {
-        font-size: 2.5rem;
+    .toolkit-icon {
+        font-size: 3rem;
+        text-align:center;
     }
 
+    // .stack
     .project__title {
         font-size: $dt-fs-h4;
+        margin-top:2em;
     }
 
     .hide {
         display: inline;
-        padding: 0 .5em;
         color: $clr-dark;
         font-size: $dt-fs-body;
-    }
-
-    .dark .hide {
-        color: $clr-accent;
     }
 
     .navigation.active {
@@ -80,7 +188,9 @@
         text-align: right;
     }
 
-    .icon .bx {
-        font-size: 2.5rem;
+    .toolkit-icon .bx {
+        font-size: 4rem;
+        padding-bottom: 1rem;
     }
+
 }

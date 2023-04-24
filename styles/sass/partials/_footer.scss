@@ -20,7 +20,9 @@ footer {
     font-weight: $fw-bold;
     text-decoration: none;
 }
-
+.title-footer{
+    color:$clr-accent;
+}
 
 a.social-list__link {
     color: $clr-btn-accent;
@@ -43,7 +45,7 @@ footer span,
 }
 
 .copyright {
-    background-color: $clr-accent;
+    background-color: $clr-light;
     padding: 0;
     width: 100%;
     margin: 0;

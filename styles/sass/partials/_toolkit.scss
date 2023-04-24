@@ -2,13 +2,13 @@
 
 /* Toolkit section */
 #toolkit {
-    background-color: $clr-accent;
+    background-color: #F3F6FA;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 50px;
+    gap: 1em;
 }
 
 .icons {
@@ -26,6 +26,18 @@
     letter-spacing: 1px;
 }
 
-.bx bxl-netlify {
-    display: none;
+.toolkit-icon p{
+    margin:0;
+    margin-bottom:1.2em;
+}
+
+.toolkit-icon{
+    background-color: $clr-light;
+    display:flex;
+    flex-direction: column;
+    padding-top:1em;
+}
+
+.none {
+    display: block;
 }
