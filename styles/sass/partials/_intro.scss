@@ -5,8 +5,6 @@
     object-fit: cover;
     margin: 0 auto;
     margin-bottom: 2em;
-    height: 400px;
-    width: 400px;
     border-radius: 50%;
 }
 
@@ -47,7 +45,9 @@
 
 .flex-btn{
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items:center;
     gap:1em;
 }
 
