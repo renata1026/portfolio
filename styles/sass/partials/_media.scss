@@ -23,7 +23,10 @@
    .flex-btn{
     display:flex;
     justify-content: flex-start;
-    gap:1.5em;
+    gap:0;
+   }
+   .btn-dark,.btn{
+    margin-right: 1em;
    }
    .intro__img,.about-me__img{
     margin:0;

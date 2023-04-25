@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -317,8 +318,6 @@ strong {
 .btn,
 .btn-dark {
   background: #000;
-  display: inline-block;
-  padding: 1em 2.5em;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -670,6 +669,11 @@ a .hamburger {
   border-radius: 50%;
 }
 
+.intro__img {
+  -o-object-position: top center;
+     object-position: top center;
+}
+
 .contact-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,6 +882,10 @@ p.position {
   width: 20px;
 }
 
+blockquote {
+  content: "“";
+}
+
 /* Toolkit section */
 #toolkit {
   background-color: #F3F6FA;
@@ -939,7 +947,7 @@ p.position {
 }
 
 .project__img img {
-  min-height: 300px;
+  min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1162,7 +1170,10 @@ footer span,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 1.5em;
+    gap: 0;
+  }
+  .btn-dark, .btn {
+    margin-right: 1em;
   }
   .intro__img, .about-me__img {
     margin: 0;
