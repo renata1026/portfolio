@@ -12,7 +12,7 @@
 	<!--Add Google Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<!--Add Stylesheet-->
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Dev Portfolio</title>
@@ -22,7 +22,7 @@
 
 <body>
 	<header>
-		<div class="top-row padding">
+		<div class="top-row">
 			<div class="switch">
 				<div class="flicker"></div>
 				<div class="moon"></div>
@@ -48,22 +48,21 @@
 			<h1 class="title-intro">
 				Hi, I am Renata!
 			</h1><!--End Title-Intro-->
-			<p>Passionate front-end developer with hands-on experience in integrating crucial features such as SEO, Google Analytics,
-			and email marketing. Eager to create exceptional digital experiences while practicing yoga and sharing stories from
-			traveling around the world.</p>
-			</p>
-		<div class="flex flex-btn">
-			<a class="btn-dark" id="project-btn" href="#project" aria-label="Projects">Projects<i class='bx bx-right-arrow-alt'></i></a>
-			<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's
-					resume" target="_blank" rel="noopener noreferer">View my CV<i class='bx bx-right-arrow-alt'></i><a>
-		</div>
+			<p>Passionate front-end developer with hands-on experience in integrating crucial features such as SEO, Google
+				Analytics, and email marketing. Eager to create exceptional digital experiences. For fun I'm also a
+				certified yoga teacher and have also travelled around the world</p>
+			<div class="flex flex-btn">
+				<a class="btn-dark" id="project-btn" href="#project" aria-label="Projects">Projects<i
+						class='bx bx-right-arrow-alt'></i></a>
+				<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's resume" target="_blank"
+					rel="noopener noreferer">View my CV<i class='bx bx-right-arrow-alt'></i></a>
+			</div>
 		</div><!--End left-col-->
 		<div class='home-right-col'>
 			<div class="flex">
 				<img src="assets/dev-renata-03.png" alt="a picture of Renata Reinartz smiling" class="intro__img">
 			</div><!--End Flex-->
 		</div><!--End right-col-->
-		</div><!--End Socials-->
 	</section><!--End Home-->
 	<!-- My Services -->
 	<section class="my-services padding" id="services">
@@ -100,20 +99,21 @@
 			</div><!-- End left-col -->
 			<div class="right-col">
 				<p class="greeting">Hi there! I'm Renata, a passionate front-end developer with experience in CSS, HTML, JavaScript, and React. Whether you need a custom site or a
-				tailored WordPress site, I'm here to help. I'm a graduate of Juno College's web development immersive bootcamp. I
+				tailored WordPress site, I'm here to help.
+				</p>
+				<p class="qualifications">
+				I'm a graduate of Juno College's web development immersive bootcamp. I
 				also have a degree in accounting and used to be a CPA, but I
 				got into web development because I love technology and tinkering with systems. Let's build something great together!
+				</p>
 				<!-- End Greeting -->
 				</p><!-- End Qualifications -->
-				<p class="facts"><strong>Why did you become a web developer?</strong>
+				<p class="facts">Why did you become a web developer?
 				Tech is my jam. I’ve always enjoyed tinkering with spreadsheets, automating simple
 				processes, and
 				digging into the nitty-gritty of any system I use; it’s a passion that has stayed with
 				me since my
 				teenage years.
-				When my husband struggled to build an online presence for his wellness business, I was
-				the one who
-				finally took matters into my own hands. (That’s how I got started building websites).
 				</p><!-- End Facts -->
 				<div class="flex-btn">
 					<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's
@@ -126,10 +126,12 @@
 	</section><!-- End About Me__Section  -->
 	<!---- Testimonial -->
 	<section class="slider padding" id="testimonials">
-		<h2 class="title-tes" id="title-accent">Client Love</h2>
+		<div class="container">
+			<h2 class="title-tes" id="title-accent">Client Love</h2>
+		</div>
 		<div class="slide">
-				<img src="./assets/josie-peterson.jpg" alt="A picture of Josie Peterson">
-				<p>I can't thank you enough for all you've done. Not only have you given me a website that
+			<img src="./assets/josie-peterson.jpg" alt="A picture of Josie Peterson">
+			<p>I can't thank you enough for all you've done. Not only have you given me a website that
 				I'm
 				proud of, but
 				I'm forever grateful to you for helping me FINALLY find my niche. Add to that the
@@ -406,5 +408,4 @@
 	</footer>
 	<script src="script.js"></script>
 </body>
-
 </html>

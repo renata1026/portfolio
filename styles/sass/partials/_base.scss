@@ -8,7 +8,8 @@ body {
     margin: 0;
     font-family: $ff-primary;
     font-size: $fs-body;
-    line-height: 1.2;
+    line-height: 1.8;
+    letter-spacing:0.2px;
 }
 
 .padding{
@@ -32,9 +33,11 @@ strong {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    // padding: 14px 15px;
-    padding:0.25em;
+    padding: 14px 15px;
     border-radius: 100px;
+    margin-top:2.75em;
+    min-height:44px;
+    min-width:167px;
 }
 
 .btn-dark {
@@ -52,8 +55,9 @@ strong {
     scroll-behavior: smooth;
     text-decoration: none;
     cursor: pointer;
-    width:13em;
-    max-width:40%;
+    max-height:4em;
+    padding:0 1em 0 1em;
+
 }
 .span{
 margin-left:15px;

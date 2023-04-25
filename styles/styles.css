@@ -275,9 +275,10 @@ body {
   background: #fff;
   color: #000;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.1rem;
-  line-height: 1.2;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
 }
 
 .padding {
@@ -307,8 +308,11 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.25em;
+  padding: 14px 15px;
   border-radius: 100px;
+  margin-top: 2.75em;
+  min-height: 44px;
+  min-width: 167px;
 }
 
 .btn-dark {
@@ -329,8 +333,8 @@ strong {
   scroll-behavior: smooth;
   text-decoration: none;
   cursor: pointer;
-  width: 13em;
-  max-width: 40%;
+  max-height: 4em;
+  padding: 0 1em 0 1em;
 }
 
 .span {
@@ -475,7 +479,6 @@ header {
           align-items: center;
   width: 100%;
   padding: 1em;
-  position: fixed;
   z-index: 10;
   min-height: 150px;
 }
@@ -664,8 +667,8 @@ a .hamburger {
      object-fit: cover;
   margin: 0 auto;
   margin-bottom: 2em;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
 }
 
@@ -1149,9 +1152,6 @@ footer span,
   }
 }
 @media (min-width: 800px) {
-  .top-row {
-    padding: 0 8em;
-  }
   .intro, .about-me__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1159,9 +1159,9 @@ footer span,
     margin-top: 6.5em;
   }
   .flex, img.intro__img {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .flex-btn {
     display: -webkit-box;
@@ -1186,6 +1186,8 @@ footer span,
   .home-container {
     display: grid;
     grid-template-columns: 60% 40%;
+    margin: 0;
+    padding-top: 0;
   }
   .home-container.left-col {
     grid-column: 1/2;
@@ -1224,12 +1226,18 @@ footer span,
   .icon.none {
     display: none;
   }
+  .top-row {
+    padding: 0em 8em;
+  }
   .padding {
     padding: 10em 8em;
     text-align: center;
   }
   .about-me.padding {
     padding-top: 0;
+  }
+  #home {
+    padding-top: 2em !important;
   }
   .padding,
   .title-services,
@@ -1315,7 +1323,8 @@ footer span,
   .navigation ul li {
     text-align: right;
   }
-  .toolkit-icon .bx {
+  .toolkit-icon .bx,
+  .service .bx {
     font-size: 4rem;
     padding-bottom: 1rem;
   }

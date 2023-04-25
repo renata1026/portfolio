@@ -10,24 +10,22 @@
 
 @media (min-width:800px) {
 
-   .top-row{
-    padding:0 8em;
-   }
     .intro,.about-me__body{
     display:flex;
     margin-top:6.5em;
    }
    .flex, img.intro__img{
-    justify-content: flex-end;
+    justify-content: center;
    }
    .flex-btn{
     display:flex;
     justify-content: flex-start;
     gap:0;
+
    }
    .btn-dark,.btn{
     margin-right: 1em;
-    padding:14px 15px;
+    padding: 14px 15px;
    }
    .intro__img,.about-me__img{
     margin:0;
@@ -40,6 +38,8 @@
     .home-container {
     display: grid;
     grid-template-columns: 60% 40%;
+    margin:0;
+    padding-top:0;
     }
 
     .home-container.left-col {
@@ -88,12 +88,20 @@
     .icon.none {
         display: none;
     }
+
+    .top-row {
+        padding: 0em 8em;
+    }
     .padding {
-    padding: 10em 8em;
-    text-align: center;
+        padding: 10em 8em;
+        text-align: center;
     }
     .about-me.padding{
-    padding-top:0;
+        padding-top:0;
+    }
+
+    #home{
+        padding-top:2em !important;
     }
     .padding,
     .title-services,
@@ -192,7 +200,8 @@
         text-align: right;
     }
 
-    .toolkit-icon .bx {
+    .toolkit-icon .bx,
+    .service .bx {
         font-size: 4rem;
         padding-bottom: 1rem;
     }
