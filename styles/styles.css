@@ -677,6 +677,11 @@ a .hamburger {
   border-radius: 50%;
 }
 
+.about-me__img {
+  -o-object-position: top;
+     object-position: top;
+}
+
 .intro__img {
   -o-object-position: top center;
      object-position: top center;
@@ -812,8 +817,8 @@ a .hamburger {
 }
 
 .slide img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -1239,6 +1244,9 @@ footer span,
   .bx bxl-netlify {
     display: inline;
   }
+  .icons {
+    padding: 0 5em;
+  }
   .icon.none {
     display: none;
   }
@@ -1285,6 +1293,9 @@ footer span,
     padding: 1em 2em;
     opacity: 0.8;
     border-radius: 1%;
+  }
+  .title-tes {
+    padding-left: 4em;
   }
   .slide p {
     width: 50%;
