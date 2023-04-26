@@ -55,19 +55,19 @@ font-weight:$fw-reg;
 //     opacity: 0.25;
 // }
 
-#title-accent {
+#light-accent {
     margin-bottom: 0.5em;
     border-bottom: 0;
     width: 100%;
-    color: $clr-accent;
+    color: $clr-light;
 }
 
-#title-accent {
-    color: $clr-accent;
+#light-accent {
+    color: $clr-light;
     position: relative
 }
 
-// #title-accent::after {
+// #light-accent::after {
 //     content: '';
 //     display: block;
 //     width: 2em;

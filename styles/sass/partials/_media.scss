@@ -80,7 +80,7 @@
 
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
+        gap: 2em;
     }
 
     .bx bxl-netlify {
@@ -111,7 +111,7 @@
     .padding,
     .title-services,
     .service h3,
-    #title-accent,
+    #light-accent,
     #title-dark,
     .title-project{
         text-align: left;
@@ -120,7 +120,7 @@
     .title-footer{
         text-align:center;
     }
-    #title-accent,
+    #light-accent,
     #title-dark,
     .title-project{
         margin-bottom: 3.75rem;
@@ -143,10 +143,7 @@
         border-radius:1%;
     }
 
-    .title-tes{
-        padding-left:4em;
-    }
-    .slide p{
+       .slide p{
         width:50%;
     }
 
