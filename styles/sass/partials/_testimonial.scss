@@ -20,6 +20,7 @@
 }
 
 .slide {
+    position:relative;
     transition: all 0.3s;
     text-align: center;
     display: flex;
@@ -27,11 +28,21 @@
     align-items: center;
     justify-content: center;
     padding:1em;
+    height: 600px;
+    overflow: auto;
+
 }
 
 .slide img {
-    width: 200px;
-    height: 200px;
+position: absolute;
+    /* use absolute positioning for the image */
+    top: 0;
+    /* position the image above the text */
+    left: 50%;
+    /* position the image horizontally */
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1.2em;
@@ -61,7 +72,8 @@ p.position {
 #prev {
     display: inline-block;
     position: absolute;
-    margin: 0 auto;
+    vertical-align: middle;
+    // margin: 0 auto;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -69,16 +81,20 @@ p.position {
     overflow: hidden;
     cursor: pointer;
     font-size: $fs-body;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .prev {
     top: 50%;
     left: 2%;
+    transform: translateY(-50%);
 }
 
 .next {
     top: 50%;
     right: 2%;
+    transform: translateY(-50%);
 }
 
 .next::after,
