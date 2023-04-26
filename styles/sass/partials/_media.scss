@@ -70,6 +70,10 @@
     h1,.left-col{
         text-align:left;
     }
+
+    .icon.stack p{
+        margin-right:1.25em;
+    }
     .project__container {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 5rem

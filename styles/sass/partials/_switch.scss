@@ -34,30 +34,31 @@
     transition: 0.3s;
     color: $clr-light;
 }
-
+.dark .project__title,
+.dark .hamburger,
 .dark .greeting,
 .dark .qualifications,
 .dark .facts,
 .dark .hide{
     color:$clr-light;
 }
-
+.dark #title-accent,
 .dark #light-accent,
 .dark #title-dark.title-tools,
 .dark #title-dark.title-about-me,
 .dark.title-tools,
 .dark .icon,
 .dark .project__link,
-.dark .project__title,
 .dark .desc,
 .dark .stack,
-.dark .title-project
+.dark .title-project,
+.dark .title-footer
  {
     color: $clr-accent;
 }
 
-.dark.title-services,
-.dark.title-footer {
+.dark.title-services
+{
     color: $clr-dark;
 }
 

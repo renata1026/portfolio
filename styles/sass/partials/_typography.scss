@@ -26,7 +26,7 @@ h4{
     letter-spacing:2px;
 }
 h4.project__title{
-    margin-top:0;
+    margin:0;
 }
 p {
 font-weight:$fw-reg;
@@ -45,16 +45,6 @@ font-weight:$fw-reg;
     position: relative
 }
 
-// #title-dark::after {
-//     content: '';
-//     display: block;
-//     width: 2em;
-//     height: 1px;
-//     margin: 0 auto;
-//     background: $clr-dark;
-//     opacity: 0.25;
-// }
-
 #light-accent {
     margin-bottom: 0.5em;
     border-bottom: 0;
@@ -66,16 +56,6 @@ font-weight:$fw-reg;
     color: $clr-light;
     position: relative
 }
-
-// #light-accent::after {
-//     content: '';
-//     display: block;
-//     width: 2em;
-//     height: 1px;
-//     margin: 0 auto;
-//     background: $clr-accent;
-//     opacity: 0.25;
-// }
 
 .highlight {
     font-weight: $fw-reg;

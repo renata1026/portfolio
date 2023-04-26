@@ -10,10 +10,14 @@
 .project__img {
     background: #F3F6FA;
     border-radius: .5rem;
+    display:flex;
+    flex-grow:1;
 }
 
 .project__img img {
-    min-height: 100%;
+    width:100%;
+    height:auto;
+    // min-height: 100%;
     object-fit: cover;
 }
 

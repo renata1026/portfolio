@@ -412,7 +412,7 @@ h4 {
 }
 
 h4.project__title {
-  margin-top: 0;
+  margin: 0;
 }
 
 p {
@@ -608,6 +608,8 @@ a .hamburger {
   color: #fff;
 }
 
+.dark .project__title,
+.dark .hamburger,
 .dark .greeting,
 .dark .qualifications,
 .dark .facts,
@@ -615,21 +617,21 @@ a .hamburger {
   color: #fff;
 }
 
+.dark #title-accent,
 .dark #light-accent,
 .dark #title-dark.title-tools,
 .dark #title-dark.title-about-me,
 .dark.title-tools,
 .dark .icon,
 .dark .project__link,
-.dark .project__title,
 .dark .desc,
 .dark .stack,
-.dark .title-project {
+.dark .title-project,
+.dark .title-footer {
   color: #7ce75a;
 }
 
-.dark.title-services,
-.dark.title-footer {
+.dark.title-services {
   color: #000;
 }
 
@@ -972,10 +974,17 @@ blockquote {
 .project__img {
   background: #F3F6FA;
   border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .project__img img {
-  min-height: 100%;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1134,11 +1143,11 @@ footer {
 }
 
 .title-footer {
-  color: #7ce75a;
+  color: #fff;
 }
 
 a.social-list__link {
-  color: #e75a7c;
+  color: #fff;
 }
 
 .footer__link:hover,
@@ -1238,6 +1247,9 @@ footer span,
   }
   h1, .left-col {
     text-align: left;
+  }
+  .icon.stack p {
+    margin-right: 1.25em;
   }
   .project__container {
     grid-template-columns: repeat(2, 1fr);
@@ -1343,7 +1355,7 @@ footer span,
     text-align: center;
   }
   .project__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 2em;
   }
   .hide {
