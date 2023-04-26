@@ -954,6 +954,10 @@ blockquote {
   border-radius: 2px;
 }
 
+.toolkit-icon i.bx.bxl {
+  margin: 0;
+}
+
 .none {
   display: block;
 }
@@ -968,7 +972,6 @@ blockquote {
 .project__img {
   background: #F3F6FA;
   border-radius: 0.5rem;
-  width: 90%;
 }
 
 .project__img img {
@@ -1184,6 +1187,8 @@ footer span,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 100%;
+    height: auto;
   }
   .flex-btn {
     display: -webkit-box;

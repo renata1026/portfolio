@@ -10,7 +10,6 @@
 .project__img {
     background: #F3F6FA;
     border-radius: .5rem;
-    width: 90%;
 }
 
 .project__img img {
@@ -19,7 +18,6 @@
 }
 
 .project__data {
-    // position: absolute;
     bottom:0;
     width: 100%;
     height: 100%;
@@ -98,10 +96,6 @@
     text-align: center;
     padding: 1em;
 }
-
-// .project__img:hover .project__data {
-//     bottom: 100%;
-// }
 
 .hide {
     display: none;
