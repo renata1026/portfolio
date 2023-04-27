@@ -302,6 +302,14 @@ strong {
   font-weight: 700;
 }
 
+hr {
+  width: 30%;
+}
+
+footer hr {
+  width: 100%;
+}
+
 /* Buttons*/
 .btn,
 .btn-dark {
@@ -417,6 +425,7 @@ h4.project__title {
 
 p {
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 #title-dark,
@@ -618,7 +627,9 @@ a .hamburger {
 .dark .greeting,
 .dark .qualifications,
 .dark .facts,
-.dark .hide {
+.dark .hide,
+.dark .slide p,
+.dark .slide a {
   color: #fff;
 }
 
@@ -634,6 +645,10 @@ a .hamburger {
 .dark .title-project,
 .dark .title-footer {
   color: #7ce75a;
+}
+
+.dark .about-me {
+  background-color: #000;
 }
 
 .dark.title-services {
@@ -693,6 +708,15 @@ a .hamburger {
      object-position: top;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.about-me {
+  background-color: #F3F6FA;
+}
+
+.about-me__body.container {
+  margin-top: 0;
+  padding-top: 114px;
 }
 
 .intro__img {
@@ -807,6 +831,7 @@ a .hamburger {
   background-size: cover;
   background-blend-mode: multiply;
   color: #fff;
+  text-align: center;
 }
 
 .title {
@@ -819,16 +844,32 @@ a .hamburger {
   margin: 0 auto;
 }
 
+.my-services li {
+  list-style: none;
+}
+
 /* Testimonial Slider */
+.quote i {
+  font-size: 8rem;
+  color: #e75a7c;
+  position: relative;
+}
+
+.left-quote {
+  right: 0;
+  top: -0.5em;
+}
+
+.right-quote {
+  left: 0;
+  bottom: -5em;
+}
+
 .slider {
   width: 100%;
   height: auto;
   padding-top: 100px;
   padding-bottom: 2em;
-  background-image: url(../assets/desk.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
-  background-size: cover;
-  background-blend-mode: multiply;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,11 +911,8 @@ a .hamburger {
 
 .slide img {
   position: absolute;
-  /* use absolute positioning for the image */
   top: 0;
-  /* position the image above the text */
   left: 50%;
-  /* position the image horizontally */
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100px;
@@ -882,14 +920,15 @@ a .hamburger {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.5em;
 }
 
 .slide p {
   padding: 0;
   margin: 0;
   margin-bottom: 1.2em;
-  width: 100%;
+  width: 80%;
+  color: #000;
 }
 
 p.position {
@@ -901,7 +940,7 @@ p.position {
 }
 
 .slide a {
-  color: #e75a7c;
+  color: #000;
 }
 
 #next,
@@ -911,10 +950,6 @@ p.position {
   vertical-align: middle;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0.25em 0.25em 0.75em rgb(0, 0, 0), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-          box-shadow: 0.25em 0.25em 0.75em rgb(0, 0, 0), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-  overflow: hidden;
   cursor: pointer;
   font-size: 1.1rem;
   top: 50%;
@@ -936,12 +971,19 @@ p.position {
           transform: translateY(-50%);
 }
 
+button#next.next,
+button#prev.prev {
+  border: none;
+  background-color: transparent;
+}
+
 .next::after,
 .prev::after {
   content: "";
   position: absolute;
   height: 20px;
   width: 20px;
+  height: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -949,9 +991,9 @@ p.position {
 
 .next::after {
   background-image: url(../assets/icon-next.svg);
-  top: 0;
+  top: 5em;
   right: 0;
-  left: 0;
+  left: -2em;
   bottom: 0;
   margin: auto;
   height: 20px;
@@ -960,9 +1002,9 @@ p.position {
 
 .prev::after {
   background-image: url(../assets/icon-prev.svg);
-  top: 0;
+  top: 5em;
   right: 0;
-  left: 0;
+  left: 2em;
   bottom: 0;
   margin: auto;
   height: 20px;
@@ -1184,6 +1226,11 @@ footer {
   text-align: center;
 }
 
+i.bx.bx-envelope {
+  padding-left: 0.2em;
+  font-size: 1.3rem;
+}
+
 .footer {
   padding: 5em 2em;
 }
@@ -1313,9 +1360,8 @@ footer span,
   .icon.stack p {
     margin-right: 1.25em;
   }
-  .project__container {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5rem;
+  .right-col {
+    padding-left: 2em;
   }
   .bd-grid {
     margin-left: auto;
@@ -1327,9 +1373,6 @@ footer span,
   }
   .bx bxl-netlify {
     display: inline;
-  }
-  .icons {
-    padding: 0 5em;
   }
   .icon.none {
     display: none;
@@ -1348,35 +1391,18 @@ footer span,
     padding-top: 2em !important;
   }
   .padding,
-  .title-services,
-  .service h3,
   #light-accent,
   #title-dark,
   .title-project {
     text-align: left;
   }
-  .title-footer {
+  .title-footer, #services {
     text-align: center;
   }
   #light-accent,
   #title-dark,
   .title-project {
     margin-bottom: 3.75rem;
-  }
-  .services {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 1.5em;
-  }
-  .service {
-    margin: 0 auto;
-    height: 100%;
-    min-width: 300px;
-    color: black;
-    background: white;
-    padding: 1em 2em;
-    opacity: 0.8;
-    border-radius: 1%;
   }
   .slide p {
     width: 50%;
@@ -1397,6 +1423,19 @@ footer span,
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .quote i {
+    font-size: 10rem;
+    color: #e75a7c;
+    position: relative;
+  }
+  .left-quote {
+    right: 2em;
+    top: 0;
+  }
+  .right-quote {
+    right: -2em;
+    top: 3.5em;
+  }
 }
 @media (min-width: 1000px) {
   h1 {
@@ -1412,6 +1451,9 @@ footer span,
   p {
     font-size: 1.25rem;
   }
+  .icons {
+    padding: 0 5em;
+  }
   .toolkit-icon {
     font-size: 3rem;
     text-align: center;
@@ -1420,10 +1462,15 @@ footer span,
     font-size: 2rem;
     margin-top: 2em;
   }
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
   .hide {
     display: inline;
     color: #000;
     font-size: 1.25rem;
+    line-height: 1.25em;
   }
   .navigation.active {
     right: 0;
@@ -1431,9 +1478,37 @@ footer span,
   .navigation ul li {
     text-align: right;
   }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1.5em;
+  }
+  .service {
+    margin: 0 auto;
+    height: 100%;
+    min-width: 300px;
+    color: black;
+    background: white;
+    padding: 1em 2em;
+    opacity: 0.8;
+    border-radius: 1%;
+  }
   .toolkit-icon .bx,
   .service .bx {
     font-size: 4rem;
     padding-bottom: 1rem;
+  }
+  .quote i {
+    font-size: 15rem;
+    color: #e75a7c;
+    position: relative;
+  }
+  .left-quote {
+    left: -2em;
+    top: 0.5em;
+  }
+  .right-quote {
+    left: 0;
+    top: 2.5em;
   }
 }

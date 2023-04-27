@@ -13,6 +13,13 @@
     filter: grayscale(100%)
 }
 
+.about-me{
+    background-color: #F3F6FA;
+}
+.about-me__body.container{
+    margin-top:0;
+    padding-top:114px;
+}
 .intro__img{
     object-position: top center;
     filter: grayscale(100%);

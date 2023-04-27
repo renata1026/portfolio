@@ -75,28 +75,24 @@
     .icon.stack p{
         margin-right:1.25em;
     }
-    .project__container {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 5rem
+    .right-col{
+        padding-left:2em;
     }
 
     .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
     }
 
     .bx bxl-netlify {
-        display: inline;
+    display: inline;
     }
 
-    .icons{
-        padding: 0 5em;
-    }
     .icon.none {
         display: none;
     }
@@ -113,44 +109,25 @@
     }
 
     #home{
-        padding-top:2em !important;
+    padding-top:2em !important;
     }
     .padding,
-    .title-services,
-    .service h3,
     #light-accent,
     #title-dark,
     .title-project{
-        text-align: left;
+    text-align: left;
     }
 
-    .title-footer{
-        text-align:center;
+    .title-footer,#services{
+    text-align:center;
     }
     #light-accent,
     #title-dark,
     .title-project{
-        margin-bottom: 3.75rem;
+    margin-bottom: 3.75rem;
     }
 
-    .services{
-        display:grid;
-        grid-template-columns: repeat(3,auto);
-        gap:1.5em;
-    }
-
-    .service{
-        margin: 0 auto;
-        height: 100%;
-        min-width: 300px;
-        color: black;
-        background: white;
-        padding: 1em 2em;
-        opacity: 0.8;
-        border-radius:1%;
-    }
-
-       .slide p{
+    .slide p{
         width:50%;
     }
 
@@ -167,6 +144,21 @@
 
     .project__data{
         align-items: flex-start;
+    }
+    .quote i {
+    font-size: 10rem;
+    color: $clr-btn-accent;
+    position: relative;
+    }
+
+    .left-quote {
+    right: 2em;
+    top: 0;
+    }
+
+    .right-quote {
+    right:-2em;
+    top: 3.5em;
     }
 }
 @media (min-width:1000px) {
@@ -187,6 +179,10 @@
         font-size: $dt-fs-body;
     }
 
+    .icons {
+        padding: 0 5em;
+    }
+
     .toolkit-icon {
         font-size: 3rem;
         text-align:center;
@@ -197,11 +193,15 @@
         font-size: $dt-fs-h4;
         margin-top:2em;
     }
-
+    .project__container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5rem
+    }
     .hide {
         display: inline;
         color: $clr-dark;
         font-size: $dt-fs-body;
+        line-height:1.25em;
     }
 
     .navigation.active {
@@ -212,10 +212,42 @@
         text-align: right;
     }
 
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1.5em;
+    }
+
+    .service {
+        margin: 0 auto;
+        height: 100%;
+        min-width: 300px;
+        color: black;
+        background: white;
+        padding: 1em 2em;
+        opacity: 0.8;
+        border-radius: 1%;
+    }
     .toolkit-icon .bx,
     .service .bx {
         font-size: 4rem;
         padding-bottom: 1rem;
+    }
+
+    .quote i {
+        font-size: 15rem;
+        color: $clr-btn-accent;
+        position: relative;
+    }
+
+    .left-quote {
+        left:-2em;
+        top: 0.5em;
+     }
+
+    .right-quote {
+        left: 0;
+        top: 2.5em;
     }
 
 }

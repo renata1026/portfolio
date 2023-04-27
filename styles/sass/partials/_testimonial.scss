@@ -1,15 +1,27 @@
 @use "variables" as *;
 
 /* Testimonial Slider */
+
+.quote i{
+    font-size:8rem;
+    color:$clr-btn-accent;
+    position:relative;
+}
+
+.left-quote{
+    right:0;
+    top:-0.5em;
+}
+
+.right-quote {
+    left:0;
+    bottom:-5em;
+}
 .slider {
     width: 100%;
     height:auto;
     padding-top:100px;
     padding-bottom:2em;
-    background-image: url(../assets/desk.jpg);
-    background-color: rgba(0, 0, 0, 0.8);
-    background-size: cover;
-    background-blend-mode: multiply;
     color: $clr-light;
     display: flex;
     flex-direction: column;
@@ -34,26 +46,23 @@
 }
 
 .slide img {
-position: absolute;
-    /* use absolute positioning for the image */
+    position: absolute;
     top: 0;
-    /* position the image above the text */
     left: 50%;
-    /* position the image horizontally */
     transform: translateX(-50%);
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 .slide p {
     padding: 0;
     margin: 0;
     margin-bottom: $mb-2;
-    // width: 80%;
-    width:100%;
+    width: 80%;
+    color:$clr-dark;
 }
 
 p.position {
@@ -65,7 +74,7 @@ p.position {
 }
 
 .slide a {
-    color: $clr-btn-accent;
+    color: $clr-dark;
 }
 
 #next,
@@ -73,12 +82,8 @@ p.position {
     display: inline-block;
     position: absolute;
     vertical-align: middle;
-    // margin: 0 auto;
     width: 40px;
     height: 40px;
-    border-radius: 50px;
-    box-shadow: $bs;
-    overflow: hidden;
     cursor: pointer;
     font-size: $fs-body;
     top: 50%;
@@ -97,12 +102,18 @@ p.position {
     transform: translateY(-50%);
 }
 
+button#next.next,
+button#prev.prev{
+    border: none;
+    background-color: transparent;
+}
 .next::after,
 .prev::after {
     content: '';
     position: absolute;
     height: 20px;
     width: 20px;
+    height:0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -110,9 +121,9 @@ p.position {
 
 .next::after {
     background-image: url(../assets/icon-next.svg);
-    top: 0;
+    top: 5em;
     right: 0;
-    left: 0;
+    left: -2em;
     bottom: 0;
     margin: auto;
     height: 20px;
@@ -121,9 +132,9 @@ p.position {
 
 .prev::after {
     background-image: url(../assets/icon-prev.svg);
-    top: 0;
+    top: 5em;
     right: 0;
-    left: 0;
+    left: 2em;
     bottom: 0;
     margin: auto;
     height: 20px;

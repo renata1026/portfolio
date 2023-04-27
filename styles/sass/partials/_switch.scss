@@ -32,7 +32,8 @@
     filter: grayscale(0%)
 }
 .dark,
-.dark #toolkit {
+.dark #toolkit
+{
     background-color: $clr-dark;
     transition: 0.3s;
     color: $clr-light;
@@ -42,7 +43,9 @@
 .dark .greeting,
 .dark .qualifications,
 .dark .facts,
-.dark .hide{
+.dark .hide,
+.dark .slide p,
+.dark .slide a{
     color:$clr-light;
 }
 .dark #title-accent,
@@ -60,6 +63,9 @@
     color: $clr-accent;
 }
 
+.dark .about-me{
+    background-color: $clr-dark;
+}
 .dark.title-services
 {
     color: $clr-dark;

@@ -32,6 +32,12 @@ strong {
     font-weight: $fw-bold;
 }
 
+hr{
+    width:30%;
+}
+footer hr{
+    width:100%;
+}
 /* Buttons*/
 .btn,
 .btn-dark {
