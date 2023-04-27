@@ -10,11 +10,13 @@
 
 .about-me__img{
     object-position:top;
+    filter: grayscale(100%)
 }
 
 .intro__img{
     object-position: top center;
-    }
+    filter: grayscale(100%)
+}
 .contact-me {
     display: flex;
     justify-content: center;

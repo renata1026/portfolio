@@ -546,8 +546,8 @@ a .hamburger {
   color: #000;
   display: block;
   position: fixed;
-  top: 3%;
-  left: 85%;
+  top: 2%;
+  left: 80%;
   z-index: 20;
 }
 
@@ -558,8 +558,8 @@ a .hamburger {
 .bx-x {
   font-size: 3em;
   position: fixed;
-  top: 3%;
-  left: 85%;
+  top: 2%;
+  left: 80%;
   z-index: 20;
   color: #000;
 }
@@ -579,7 +579,7 @@ a .hamburger {
   border-radius: 20px;
   background-color: #000;
   position: relative;
-  top: -10px;
+  top: -15px;
 }
 
 .btn {
@@ -598,6 +598,11 @@ a .hamburger {
   transition: 0.3s;
   -webkit-box-shadow: inset 4px 4px 4px var(--clr-light), inset -4px -4px 4px var(--clr-dark);
           box-shadow: inset 4px 4px 4px var(--clr-light), inset -4px -4px 4px var(--clr-dark);
+}
+
+.dark img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .dark,
@@ -686,11 +691,15 @@ a .hamburger {
 .about-me__img {
   -o-object-position: top;
      object-position: top;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .intro__img {
   -o-object-position: top center;
      object-position: top center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .contact-me {

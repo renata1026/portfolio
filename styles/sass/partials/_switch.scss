@@ -7,7 +7,7 @@
     border-radius: 20px;
     background-color: $clr-dark;
     position: relative;
-    top: -10px;
+    top:-15px;
 }
 
 .btn {
@@ -28,6 +28,9 @@
         inset -4px -4px 4px var(--clr-dark);
 }
 
+.dark img{
+    filter: grayscale(0%)
+}
 .dark,
 .dark #toolkit {
     background-color: $clr-dark;
