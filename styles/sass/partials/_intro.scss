@@ -15,7 +15,23 @@
 
 .intro__img{
     object-position: top center;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    animation: blob 5s linear infinite;
+}
+
+@keyframes blob{
+    0%, 100%{
+        border-radius: 50% 45% 88% 14%;
+    }
+    25%{
+        border-radius: 30% 25% 76% 65%;
+    }
+    50% {
+        border-radius: 40% 65% 12% 45%;
+    }
+    75% {
+        border-radius: 30% 25% 76% 65%;
+    }
 }
 .contact-me {
     display: flex;
