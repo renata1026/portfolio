@@ -9,8 +9,8 @@
 }
 
 .left-quote{
-    right:0;
-    top:-0.5em;
+    right:0.5em;
+    top:1em;
 }
 
 .right-quote {
@@ -20,7 +20,6 @@
 .slider {
     width: 100%;
     height:auto;
-    padding-top:100px;
     padding-bottom:2em;
     color: $clr-light;
     display: flex;

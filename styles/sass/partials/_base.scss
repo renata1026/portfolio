@@ -26,6 +26,7 @@ img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    filter: grayscale(100%)
 }
 
 strong {

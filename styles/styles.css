@@ -296,6 +296,8 @@ img {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 strong {
@@ -706,8 +708,6 @@ a .hamburger {
 .about-me__img {
   -o-object-position: top;
      object-position: top;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .about-me {
@@ -722,8 +722,6 @@ a .hamburger {
 .intro__img {
   -o-object-position: top center;
      object-position: top center;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   -webkit-animation: blob 5s linear infinite;
           animation: blob 5s linear infinite;
 }
@@ -856,8 +854,8 @@ a .hamburger {
 }
 
 .left-quote {
-  right: 0;
-  top: -0.5em;
+  right: 0.5em;
+  top: 1em;
 }
 
 .right-quote {
@@ -868,7 +866,6 @@ a .hamburger {
 .slider {
   width: 100%;
   height: auto;
-  padding-top: 100px;
   padding-bottom: 2em;
   color: #fff;
   display: -webkit-box;
@@ -1419,9 +1416,9 @@ footer span,
     display: none;
   }
   .project__data {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .quote i {
     font-size: 10rem;
@@ -1492,6 +1489,10 @@ footer span,
     padding: 1em 2em;
     opacity: 0.8;
     border-radius: 1%;
+  }
+  .service li {
+    list-style-type: disc;
+    text-align: left;
   }
   .toolkit-icon .bx,
   .service .bx {
