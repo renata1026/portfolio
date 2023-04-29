@@ -1,0 +1,137 @@
+@use 'variables' as *;
+
+.testimonial-container {
+  //   width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.testimonial-container .slide {
+  position: relative;
+  padding: 80px 40px 40px;
+  transition: 0.5s;
+  text-align: center;
+  background: $clr-light;
+}
+
+.testimonial-container .slide:hover {
+  background: $clr-btn-accent;
+}
+
+.testimonial-container .slide p,
+.testimonial-container .slide h4 {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.testimonial-container .slide h4 {
+  margin: 20px 0 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.testimonial-container .slide h4 span {
+  color: $clr-dark;
+  transition: 0.5s;
+}
+
+.testimonial-container .slide:hover p,
+.testimonial-container .slide:hover a,
+.testimonial-container .slide:hover h4,
+.testimonial-container .slide:hover h4 span {
+  color: $clr-light;
+}
+
+.testimonial-container .slide .img-box {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial-container .slide:before {
+  content: '';
+  font-size: 7rem;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background: url(../assets/quotes.png);
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.testimonial-container .slide:hover:before {
+  transform: translateY(-60px) !important;
+  opacity: 1;
+}
+
+.testimonial-container .slide:after {
+  content: '';
+  font-size: 7rem;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  width: 80px;
+  height: 80px;
+  background: url(../assets/quotes.png);
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  transition: 0.5s;
+  transform: rotate(180deg) translateY(0px);
+}
+
+.testimonial-container .slide:hover:after {
+  transform: rotate(180deg) translateY(-60px) !important;
+  opacity: 1;
+}
+
+.indicators {
+  position: relative;
+}
+#next,
+#prev {
+  border: none;
+  background: transparent;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: $fs-body;
+  top: -10em;
+  transform: translateY(-50%);
+}
+
+.prev {
+  top: -10em;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.next {
+  top: -10em;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .testimonial-container .slide {
+    margin-top: 80px;
+  }
+}
