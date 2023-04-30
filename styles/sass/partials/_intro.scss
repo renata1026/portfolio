@@ -1,85 +1,86 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 .intro__img,
 .about-me__img {
-    object-fit: cover;
-    margin: 0 auto;
-    margin-bottom: 2em;
-    border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border-radius: 50%;
 }
 
-.about-me__img{
-    object-position:top;
-
+.about-me__img {
+  object-position: top;
 }
 
-.about-me{
-    background-color: #F3F6FA;
-}
-.about-me__body.container{
-    margin-top:0;
-    padding-top:114px;
-}
-.intro__img{
-    object-position: top center;
-    animation: blob 5s linear infinite;
+.about-me {
+  background-color: #f3f6fa;
 }
 
-@keyframes blob{
-    0%, 100%{
-        border-radius: 50% 45% 88% 14%;
-    }
-    25%{
-        border-radius: 30% 25% 76% 65%;
-    }
-    50% {
-        border-radius: 40% 65% 12% 45%;
-    }
-    75% {
-        border-radius: 30% 25% 76% 65%;
-    }
+.intro__img {
+  object-position: top center;
+  animation: blob 5s linear infinite;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 50% 45% 88% 14%;
+  }
+  25% {
+    border-radius: 30% 25% 76% 65%;
+  }
+  50% {
+    border-radius: 40% 65% 12% 45%;
+  }
+  75% {
+    border-radius: 30% 25% 76% 65%;
+  }
+}
+
+.home-container {
+  padding-top: 0;
 }
 .contact-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 200ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 200ms ease-in-out;
 }
 
 .contact-me a {
-    font-size: 2em;
-    color: $clr-dark;
-    margin-left: 1em;
-    padding: .1em;
-    cursor: pointer;
+  font-size: 2em;
+  color: $clr-dark;
+  margin-left: 1em;
+  padding: 0.1em;
+  cursor: pointer;
 }
 
 .social-list__item {
-    list-style: none;
+  list-style: none;
 }
 
 .social-list {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .bx {
-    font-size: $fs-icon;
+  font-size: $fs-icon;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.flex-btn{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    gap:1em;
+.flex-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .intro__img,
-.about-me__img{
-    margin-top:3em;
+.about-me__img {
+  margin-top: 3em;
 }

@@ -710,12 +710,7 @@ a .hamburger {
 }
 
 .about-me {
-  background-color: #F3F6FA;
-}
-
-.about-me__body.container {
-  margin-top: 0;
-  padding-top: 114px;
+  background-color: #f3f6fa;
 }
 
 .intro__img {
@@ -754,6 +749,10 @@ a .hamburger {
     border-radius: 30% 25% 76% 65%;
   }
 }
+.home-container {
+  padding-top: 0;
+}
+
 .contact-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +838,7 @@ a .hamburger {
 .service {
   max-width: 500px;
   margin: 0 auto;
+  padding-left: 0;
 }
 
 .my-services li {
@@ -1397,10 +1397,13 @@ footer span,
   #services {
     text-align: center;
   }
-  #light-accent,
+  #title-accent,
   #title-dark,
   .title-project {
     margin-bottom: 3.75rem;
+  }
+  .title-tes {
+    margin: 0;
   }
   .stack {
     -webkit-box-align: center;
@@ -1437,6 +1440,10 @@ footer span,
   }
   p {
     font-size: 1.25rem;
+  }
+  .about-me__body.container {
+    margin-top: 0;
+    padding-top: 114px;
   }
   .icons {
     padding: 0 5em;

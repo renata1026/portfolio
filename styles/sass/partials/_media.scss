@@ -107,6 +107,8 @@
     padding: 10em 8em;
     text-align: center;
   }
+
+    }
   .about-me.padding {
     padding-top: 0;
   }
@@ -125,10 +127,13 @@
   #services {
     text-align: center;
   }
-  #light-accent,
+  #title-accent,
   #title-dark,
   .title-project {
     margin-bottom: 3.75rem;
+  }
+  .title-tes {
+    margin: 0 $important;
   }
 
   .stack {
@@ -150,8 +155,8 @@
     height: 300px;
   }
 
-  .prev{
-    left:10px;
+  .prev {
+    left: 10px;
   }
   @media (min-width: 1000px) {
     h1 {
@@ -170,6 +175,10 @@
     p {
       font-size: $dt-fs-body;
     }
+    .about-me__body.container {
+      margin-top: 0;
+      padding-top: 114px;
+    }
 
     .icons {
       padding: 0 5em;
@@ -180,7 +189,6 @@
       text-align: center;
     }
 
-    // .stack
     .project__title {
       font-size: $dt-fs-h4;
       margin-top: 2em;
