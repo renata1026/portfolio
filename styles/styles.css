@@ -299,7 +299,7 @@ img {
           filter: grayscale(100%);
 }
 
-strong {
+.strong {
   font-weight: 700;
 }
 
@@ -850,18 +850,20 @@ a .hamburger {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 20px;
 }
 
 .testimonial-container .slide {
   position: relative;
+  height: 500px;
   padding: 80px 40px 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-align: center;
   background: #fff;
+  margin-top: 80px;
 }
 
 .testimonial-container .slide:hover {
@@ -906,6 +908,21 @@ a .hamburger {
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.testimonial-container .slide .img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonial-container .slide:before {
@@ -971,30 +988,25 @@ a .hamburger {
   height: 40px;
   cursor: pointer;
   font-size: 1.1rem;
-  top: -10em;
+  top: -15em;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .prev {
-  top: -10em;
+  top: -15em;
   left: 2%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .next {
-  top: -10em;
+  top: -15em;
   right: 2%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-@media (max-width: 768px) {
-  .testimonial-container .slide {
-    margin-top: 80px;
-  }
-}
 /* Toolkit section */
 #toolkit {
   background-color: #F3F6FA;
@@ -1401,13 +1413,18 @@ footer span,
   .none {
     display: none;
   }
-  .project__data {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .testimonial-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .testimonial-container .slide {
+    position: relative;
+    height: 300px;
+  }
+  .prev {
+    left: 10px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) and (min-width: 1000px) {
   h1 {
     font-size: 4rem;
   }

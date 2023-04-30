@@ -141,92 +141,100 @@
   .none {
     display: none;
   }
-
-  .project__data {
-    align-items: flex-start;
-  }
-}
-@media (min-width: 1000px) {
-  h1 {
-    font-size: $dt-fs-h1;
+  .testimonial-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
-  h2 {
-    font-size: $dt-fs-h2;
+  .testimonial-container .slide {
+    position: relative;
+    height: 300px;
   }
 
-  h3,
-  .icons {
-    font-size: $dt-fs-h3;
+  .prev{
+    left:10px;
   }
+  @media (min-width: 1000px) {
+    h1 {
+      font-size: $dt-fs-h1;
+    }
 
-  p {
-    font-size: $dt-fs-body;
-  }
+    h2 {
+      font-size: $dt-fs-h2;
+    }
 
-  .icons {
-    padding: 0 5em;
-  }
+    h3,
+    .icons {
+      font-size: $dt-fs-h3;
+    }
 
-  .toolkit-icon {
-    font-size: 3rem;
-    text-align: center;
-  }
+    p {
+      font-size: $dt-fs-body;
+    }
 
-  // .stack
-  .project__title {
-    font-size: $dt-fs-h4;
-    margin-top: 2em;
-  }
-  .project__container {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5rem;
-  }
-  .hide {
-    display: inline;
-    color: $clr-dark;
-    font-size: $dt-fs-body;
-    line-height: 1.25em;
-  }
+    .icons {
+      padding: 0 5em;
+    }
 
-  .navigation.active {
-    right: 0;
-  }
+    .toolkit-icon {
+      font-size: 3rem;
+      text-align: center;
+    }
 
-  .navigation ul li {
-    text-align: right;
-  }
+    // .stack
+    .project__title {
+      font-size: $dt-fs-h4;
+      margin-top: 2em;
+    }
+    .project__container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5rem;
+    }
+    .hide {
+      display: inline;
+      color: $clr-dark;
+      font-size: $dt-fs-body;
+      line-height: 1.25em;
+    }
 
-  .services {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 1.5em;
-  }
+    .navigation.active {
+      right: 0;
+    }
 
-  .service {
-    margin: 0 auto;
-    height: 100%;
-    min-width: 300px;
-    color: black;
-    background: white;
-    padding: 1em 2em;
-    opacity: 0.8;
-    border-radius: 1%;
-  }
+    .navigation ul li {
+      text-align: right;
+    }
 
-  .service li {
-    list-style-type: disc;
-    text-align: left;
-  }
-  .toolkit-icon .bx,
-  .service .bx {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-  }
-  .slide {
-    min-height: auto;
-  }
-  .slide p {
-    width: 100%;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 1.5em;
+    }
+
+    .service {
+      margin: 0 auto;
+      height: 100%;
+      min-width: 300px;
+      color: black;
+      background: white;
+      padding: 1em 2em;
+      opacity: 0.8;
+      border-radius: 1%;
+    }
+
+    .service li {
+      list-style-type: disc;
+      text-align: left;
+    }
+    .toolkit-icon .bx,
+    .service .bx {
+      font-size: 4rem;
+      padding-bottom: 1rem;
+    }
+    .slide {
+      min-height: auto;
+    }
+    .slide p {
+      width: 100%;
+    }
   }
 }
