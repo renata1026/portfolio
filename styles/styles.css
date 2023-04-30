@@ -629,7 +629,6 @@ a .hamburger {
 .dark .qualifications,
 .dark .facts,
 .dark .hide,
-.dark .slide p,
 .dark .slide a {
   color: #fff;
 }
@@ -652,11 +651,12 @@ a .hamburger {
   background-color: #000;
 }
 
-.dark.title-services {
+.dark.slide p {
   color: #000;
 }
 
-.dark #project {
+.dark #project,
+.dark .testimonial-container .slide {
   background-color: #000;
 }
 
@@ -845,7 +845,6 @@ a .hamburger {
   list-style: none;
 }
 
-/* Testimonial Slider */
 .testimonial-container {
   width: 100%;
   margin: 0 auto;
@@ -1403,7 +1402,7 @@ footer span,
     margin-bottom: 3.75rem;
   }
   .title-tes {
-    margin: 0;
+    margin: 0 !important;
   }
   .stack {
     -webkit-box-align: center;
@@ -1427,7 +1426,7 @@ footer span,
     left: 10px;
   }
 }
-@media (min-width: 800px) and (min-width: 1000px) {
+@media (min-width: 1000px) {
   h1 {
     font-size: 4rem;
   }

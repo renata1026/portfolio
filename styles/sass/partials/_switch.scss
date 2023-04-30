@@ -1,42 +1,40 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 /*Switch */
 .switch {
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: $clr-dark;
-    position: relative;
-    top:-15px;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $clr-dark;
+  position: relative;
+  top: -15px;
 }
 
 .btn {
-    background-color: $clr-light;
+  background-color: $clr-light;
 }
 
 .flicker {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: $clr-light;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    transition: 0.3s;
-    box-shadow:
-        inset 4px 4px 4px var(--clr-light),
-        inset -4px -4px 4px var(--clr-dark);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: $clr-light;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: inset 4px 4px 4px var(--clr-light),
+    inset -4px -4px 4px var(--clr-dark);
 }
 
-.dark img{
-    filter: grayscale(0%)
+.dark img {
+  filter: grayscale(0%);
 }
 .dark,
-.dark #toolkit
-{
-    background-color: $clr-dark;
-    transition: 0.3s;
-    color: $clr-light;
+.dark #toolkit {
+  background-color: $clr-dark;
+  transition: 0.3s;
+  color: $clr-light;
 }
 .dark .project__title,
 .dark .hamburger,
@@ -44,9 +42,8 @@
 .dark .qualifications,
 .dark .facts,
 .dark .hide,
-.dark .slide p,
-.dark .slide a{
-    color:$clr-light;
+.dark .slide a {
+  color: $clr-light;
 }
 .dark #title-accent,
 .dark #light-accent,
@@ -58,51 +55,51 @@
 .dark .desc,
 .dark .stack,
 .dark .title-project,
-.dark .title-footer
- {
-    color: $clr-accent;
+.dark .title-footer {
+  color: $clr-accent;
 }
 
-.dark .about-me{
-    background-color: $clr-dark;
-}
-.dark.title-services
-{
-    color: $clr-dark;
+.dark .about-me {
+  background-color: $clr-dark;
 }
 
-.dark #project {
-    background-color: $clr-dark;
+.dark.slide p {
+  color: $clr-dark;
+}
+
+.dark #project,
+.dark .testimonial-container .slide {
+  background-color: $clr-dark;
 }
 .dark #project-btn,
-.dark #contact-btn{
-    background-color: $clr-accent;
-    color:$clr-dark;
+.dark #contact-btn {
+  background-color: $clr-accent;
+  color: $clr-dark;
 }
 
 .dark .project__data {
-    background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .dark .links,
 .dark.slide a {
-    color: $clr-btn-accent;
+  color: $clr-btn-accent;
 }
 
 .dark .switch {
-    background-color: $clr-btn-accent;
+  background-color: $clr-btn-accent;
 }
 
 .dark .flicker {
-    transform: translateX(40px);
+  transform: translateX(40px);
 }
 
 .moon {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0 0 $clr-light;
-    position: absolute;
-    top: 5px;
-    left: 45px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 $clr-light;
+  position: absolute;
+  top: 5px;
+  left: 45px;
 }
