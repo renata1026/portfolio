@@ -42,7 +42,8 @@
 .dark .qualifications,
 .dark .facts,
 .dark .hide,
-.dark .slide a {
+.dark .testimonial-container .slide p,
+.dark .testimonial-container .slide a {
   color: $clr-light;
 }
 .dark #title-accent,
@@ -64,7 +65,8 @@
   background-color: $clr-dark;
 }
 
-.dark.slide p {
+.dark .slide p,
+.dark .slide a {
   color: $clr-dark;
 }
 
@@ -72,18 +74,14 @@
 .dark .testimonial-container .slide {
   background-color: $clr-dark;
 }
+
 .dark #project-btn,
 .dark #contact-btn {
   background-color: $clr-accent;
   color: $clr-dark;
 }
 
-.dark .project__data {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.dark .links,
-.dark.slide a {
+.dark .links {
   color: $clr-btn-accent;
 }
 

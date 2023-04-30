@@ -629,7 +629,8 @@ a .hamburger {
 .dark .qualifications,
 .dark .facts,
 .dark .hide,
-.dark .slide a {
+.dark .testimonial-container .slide p,
+.dark .testimonial-container .slide a {
   color: #fff;
 }
 
@@ -652,7 +653,8 @@ a .hamburger {
   background-color: #000;
 }
 
-.dark.slide p {
+.dark .slide p,
+.dark .slide a {
   color: #000;
 }
 
@@ -667,12 +669,7 @@ a .hamburger {
   color: #000;
 }
 
-.dark .project__data {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.dark .links,
-.dark.slide a {
+.dark .links {
   color: #e75a7c;
 }
 
@@ -935,7 +932,7 @@ a .hamburger {
   height: 80px;
   background: url(../assets/quote.svg);
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.3;
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -959,7 +956,7 @@ a .hamburger {
   height: 80px;
   background: url(../assets/quote.svg);
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.3;
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;

@@ -67,7 +67,7 @@ function generateTestimonialHTML(testimonial) {
         <img src="${testimonial.imgSrc}" style="background-image: url(${testimonial.imgSrc})" alt="A picture of ${testimonial.name}">
       </div><!--End of img-box-->
       <p>${testimonial.text}</p>
-      <h4>${testimonial.name}<br><span>${testimonial.company}</span></h4>
+      <h4>${testimonial.name}<br><a href=${testimonial.email}>${testimonial.company}</a></h4>
     </div><!--End of slide-->
   `;
 }
