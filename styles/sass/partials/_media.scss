@@ -157,6 +157,10 @@
   .prev {
     left: 10px;
   }
+
+  .testimonial-container .slide {
+    height: 500px;
+  }
 }
 @media (min-width: 1000px) {
   h1 {
@@ -240,8 +244,14 @@
   }
   .slide {
     min-height: auto;
+    display: block;
   }
+
   .slide p {
     width: 100%;
+  }
+  #next,
+  #prev {
+    top: -20em;
   }
 }

@@ -638,6 +638,7 @@ a .hamburger {
 .dark #title-dark.title-tools,
 .dark #title-dark.title-about-me,
 .dark.title-tools,
+.dark #title-dark.title-tes,
 .dark .icon,
 .dark .project__link,
 .dark .desc,
@@ -856,7 +857,7 @@ a .hamburger {
 
 .testimonial-container .slide {
   position: relative;
-  height: 500px;
+  height: 700px;
   padding: 80px 40px 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -866,7 +867,7 @@ a .hamburger {
 }
 
 .testimonial-container .slide:hover {
-  background: #e75a7c;
+  background: #f3f6fa;
 }
 
 .testimonial-container .slide p,
@@ -894,7 +895,7 @@ a .hamburger {
 .testimonial-container .slide:hover a,
 .testimonial-container .slide:hover h4,
 .testimonial-container .slide:hover h4 span {
-  color: #fff;
+  color: #000;
 }
 
 .testimonial-container .slide .img-box {
@@ -929,10 +930,10 @@ a .hamburger {
   font-size: 7rem;
   position: absolute;
   top: 0;
-  right: 30px;
+  right: 0;
   width: 80px;
   height: 80px;
-  background: url(../assets/quotes.png);
+  background: url(../assets/quote.svg);
   background-size: cover;
   opacity: 0.05;
   pointer-events: none;
@@ -956,7 +957,7 @@ a .hamburger {
   height: 80px;
   width: 80px;
   height: 80px;
-  background: url(../assets/quotes.png);
+  background: url(../assets/quote.svg);
   background-size: cover;
   opacity: 0.05;
   pointer-events: none;
@@ -987,7 +988,7 @@ a .hamburger {
   height: 40px;
   cursor: pointer;
   font-size: 1.1rem;
-  top: -15em;
+  top: -25em;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1425,6 +1426,9 @@ footer span,
   .prev {
     left: 10px;
   }
+  .testimonial-container .slide {
+    height: 500px;
+  }
 }
 @media (min-width: 1000px) {
   h1 {
@@ -1497,8 +1501,13 @@ footer span,
   }
   .slide {
     min-height: auto;
+    display: block;
   }
   .slide p {
     width: 100%;
+  }
+  #next,
+  #prev {
+    top: -20em;
   }
 }

@@ -12,7 +12,7 @@
 
 .testimonial-container .slide {
   position: relative;
-  height: 500px;
+  height: 700px;
   padding: 80px 40px 40px;
   transition: 0.5s;
   text-align: center;
@@ -21,7 +21,7 @@
 }
 
 .testimonial-container .slide:hover {
-  background: $clr-btn-accent;
+  background: #f3f6fa;
 }
 
 .testimonial-container .slide p,
@@ -46,7 +46,7 @@
 .testimonial-container .slide:hover a,
 .testimonial-container .slide:hover h4,
 .testimonial-container .slide:hover h4 span {
-  color: $clr-light;
+  color: $clr-dark;
 }
 
 .testimonial-container .slide .img-box {
@@ -78,10 +78,10 @@
   font-size: 7rem;
   position: absolute;
   top: 0;
-  right: 30px;
+  right: 0;
   width: 80px;
   height: 80px;
-  background: url(../assets/quotes.png);
+  background: url(../assets/quote.svg);
   background-size: cover;
   opacity: 0.05;
   pointer-events: none;
@@ -103,7 +103,7 @@
   height: 80px;
   width: 80px;
   height: 80px;
-  background: url(../assets/quotes.png);
+  background: url(../assets/quote.svg);
   background-size: cover;
   opacity: 0.05;
   pointer-events: none;
@@ -119,6 +119,7 @@
 .indicators {
   position: relative;
 }
+
 #next,
 #prev {
   border: none;
@@ -130,7 +131,7 @@
   height: 40px;
   cursor: pointer;
   font-size: $fs-body;
-  top: -15em;
+  top: -25em;
   transform: translateY(-50%);
 }
 

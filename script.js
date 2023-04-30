@@ -95,7 +95,9 @@ function initializeTestimonialSlider(testimonials) {
     allSlides.forEach((slide) => {
       slide.style.display = 'none';
     });
-    allSlides[currentSlide].style.display = 'block';
+    allSlides[currentSlide].style.display = 'flex';
+    allSlides[currentSlide].style.flexDirection = 'column';
+    allSlides[currentSlide].style.justifyContent = 'center';
   }
   //Create function nextSlide
   //When user clicks on next slide it will increment by one to the next slide. If user is on the last slide it will reset to an index of zero and go back to the first slide.
