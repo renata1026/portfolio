@@ -97,6 +97,12 @@ a {
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
 #link {
   display: inline-block;
   font-size: $fs-body;

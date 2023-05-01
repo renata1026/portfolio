@@ -386,6 +386,20 @@ a {
           align-items: center;
 }
 
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
 #link {
   display: inline-block;
   font-size: 1.1rem;
@@ -827,7 +841,8 @@ a .hamburger {
 /* My services section */
 .services {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 1.5em;
 }
 
@@ -843,10 +858,8 @@ a .hamburger {
 
 .service {
   margin: 0 auto;
-  height: 100%;
-  min-width: 400px;
-  color: black;
-  background: white;
+  color: #000;
+  background: #fff;
   padding: 1em;
   opacity: 0.8;
   border-radius: 1%;
@@ -1079,10 +1092,11 @@ section.timeline {
 
 .timeline-content {
   width: 95%;
-  padding: 0 15px;
+  padding: 1em;
   color: #000;
   background-color: #fff;
   opacity: 0.8;
+  text-align: center;
 }
 
 .timeline-content h3 {
@@ -1099,6 +1113,24 @@ section.timeline {
   line-height: 1.5em;
   word-spacing: 1px;
   color: #000;
+}
+
+.timeline img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.square {
+  border-radius: 0;
+  height: 200px;
+  width: 300px !important;
+  border: 1px solid #000;
+}
+
+.question {
+  height: 100px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1588,7 +1620,8 @@ footer span,
   }
   .services {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-auto-rows: 1fr;
     gap: 1.5em;
   }
   .toolkit-icon .bx,
@@ -1606,5 +1639,11 @@ footer span,
   #next,
   #prev {
     top: -20em;
+  }
+  .flex-col {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }

@@ -218,7 +218,8 @@
 
   .services {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-auto-rows: 1fr;
     gap: 1.5em;
   }
 
@@ -238,5 +239,9 @@
   #next,
   #prev {
     top: -20em;
+  }
+
+  .flex-col {
+    flex-direction: row;
   }
 }

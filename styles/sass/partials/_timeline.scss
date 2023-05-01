@@ -58,10 +58,11 @@ section.timeline {
 
 .timeline-content {
   width: 95%;
-  padding: 0 15px;
+  padding: 1em;
   color: $clr-dark;
   background-color: $clr-light;
   opacity: 0.8;
+  text-align: center;
 }
 
 .timeline-content h3 {
@@ -82,6 +83,21 @@ section.timeline {
   color: $clr-dark;
 }
 
+.timeline img {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+
+.square {
+  border-radius: 0;
+  height: 200px;
+  width: 300px !important;
+  border: 1px solid $clr-dark;
+}
+.question {
+  height: 100px !important;
+}
 @media screen and (max-width: 768px) {
   .timeline:before {
     left: 8px;
