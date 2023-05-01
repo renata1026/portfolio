@@ -3,10 +3,11 @@
 /* My services section */
 
 .my-services {
-  background-image: url(../assets/services-bg.jpg);
+  background-image: url(../assets/rock-climbing-pic.jpeg);
   background-color: rgb(0, 0, 0, 0.8);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-position: top;
+  filter: grayscale(100);
   color: $clr-light;
   text-align: center;
 }

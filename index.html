@@ -1,338 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Renata</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dev Renata</title>
-	<!--Add Boxicons-->
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<!--Add Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<!--Add Stylesheet-->
-	<link rel="stylesheet" href="./styles/styles.css">
-	<title>Dev Portfolio</title>
-	<!--Add Favicon-->
-	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-</head>
+    <!--Add Boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Add Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Add Stylesheet-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Dev Portfolio</title>
+    <!--Add Favicon-->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  </head>
 
-<body>
-	<header>
-		<div class="top-row">
-			<div class="switch">
-				<div class="flicker"></div>
-				<div class="moon"></div>
-			</div><!--End Switch-->
-			<nav>
-				<div class="menu-icon-container">
-					<div class="hamburger" onclick="show()">
-						<i class='bx bx-menu' onclick="changeIcon(this)"></i>
-					</div><!--End Hamburger-->
-				</div><!--End menu-icon-container-->
-				<div class="navigation">
-					<ul class="nav__list">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#services">My Services</a></li>
-						<li><a href="#about">About me</a></li>
-						<li><a href="#testimonials">Testimonials</a></li>
-						<li><a href="#project">Projects</a></li>
-					</ul><!--End Nav__List-->
-				</div><!--End Navigation-->
-			</nav><!--End Nav-->
-		</div><!--End Top Row-->
-	</header>
-	<!--Introduction-->
-	<section class="intro padding home-container" id="home">
-		<div class="home-left-col">
-			<h1 class="title-intro">
-				Hi, I am Renata!
-			</h1><!--End Title-Intro-->
-			<p>Passionate front-end developer with hands-on experience in integrating crucial features such as SEO, Google
-				Analytics, and email marketing. Eager to create exceptional digital experiences. For fun I'm also a
-				certified yoga teacher and have also travelled around the world</p>
-			<div class="flex flex-btn">
-				<a class="btn-dark" id="project-btn" href="#project" aria-label="Projects">Projects<i
-						class='bx bx-right-arrow-alt'></i></a>
-				<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's resume" target="_blank"
-					rel="noopener noreferer">View my CV<i class='bx bx-right-arrow-alt'></i></a>
-			</div>
-		</div><!--End left-col-->
-		<div class='home-right-col'>
-			<div class="flex">
-				<img src="assets/dev-renata-03.png" alt="a picture of Renata Reinartz smiling" class="intro__img">
-			</div><!--End Flex-->
-		</div><!--End right-col-->
-	</section><!--End Home-->
-	<!-- My Services -->
-	<section class="my-services padding" id="services">
-		<h2 class="title-services" id="title-accent">What I do</h2>
-		<div class="services">
-		<ul class="service">
-			<i class='bx bx-code-alt'></i>
-			<h3>Development</h3>
-			<li>Experience developing custom coded sites</li>
-			<li>Tech Stack: CSS, HTML, JavaScript, and React framework </li>
-			<li>Following SEO best practices.</li>
-		</ul> <!-- End Service -->
-		<ul class="service">
-			<i class='bx bxl-wordpress'></i>
-			<h3>WordPress</h3>
-			<li>Create custom WordPress sites.</li>
-			<li>Tech Stack: WordPress, Elementor, and Divi </li>
-			<li>Yoast plug-in for SEO</li>
-		</ul> <!-- End Service -->
-		<ul class="service">
-			<i class='bx bx-globe'></i>
-			<h3>Extra</h3>
-			<li>Setting up your Google Analytics</li>
-			<li>Linking your email marketing
-			system to your website</li>
-		</ul> <!-- End Service -->
-		</div><!-- End Services -->
-	</section><!-- End My-Services -->
-	<!---- About Me -->
-	<section class="about-me padding" id="about">
-		<div class="about-me__body container">
-			<div class="left-col">
-				<h2 class="title-about-me" id="title-dark">Who I am</h2>
-				<div class="image">
-				<img src="./assets/dev-renata-02.png" alt="a picture of Renata Reinartz smiling" class="about-me__img">
-				</div><!-- End Image -->
-			</div><!-- End left-col -->
-			<div class="right-col">
-				<p class="greeting">Hi there! I'm Renata, a passionate front-end developer with experience in CSS, HTML, JavaScript, and React. Whether you need a custom site or a
-				tailored WordPress site, I'm here to help.
-				</p>
-				<p class="qualifications">
-				I'm a graduate of Juno College's web development immersive bootcamp. I
-				also have a degree in accounting and used to be a CPA, but I
-				got into web development because I love technology and tinkering with systems. Let's build something great together!
-				</p>
-				<!-- End Greeting -->
-				</p><!-- End Qualifications -->
-				<p class="facts">Why did you become a web developer?
-				Tech is my jam. I’ve always enjoyed tinkering with spreadsheets, automating simple
-				processes, and
-				digging into the nitty-gritty of any system I use; it’s a passion that has stayed with
-				me since my
-				teenage years.
-				</p><!-- End Facts -->
-				<div class="flex-btn">
-					<a class="btn" a href="./assets/Renata-Reinartz-Resume.pdf" alt="Renata Reinartz's
-					resume" target="_blank" rel="noopener noreferer">View my CV<i class='bx bx-right-arrow-alt'></i>
-					</a>
-					<a class="btn-dark"id="contact-btn" href="mailto:renata.techy@gmail.com">Contact<i class='bx bx-right-arrow-alt'></i></a>
-				</div>
-			</div><!--End of right-col-->
-		</div> <!-- End About Me__Body -->
-	</section><!-- End About Me__Section  -->
-	<!---- Testimonial -->
-	<hr></hr>
-<section class="testimonial-area padding" id="testimonials">
-  <div class="testimonial">
-    <div class="sec-title">
-      <h2 class="title-tes" id="title-dark">Testimonials</h2>
-    </div><!--End of sec-title-->
-  </div><!--End of testimonial-->
-  <div class="testimonial-container">
-	</div>
-    <div class="indicators">
-		<button class="prev" id="prev"><i class='bx bxs-chevron-left'></i></button>
-		<div class="indicator-container"></div>
-		<button class="next" id="next"><i class='bx bxs-chevron-right'></i></button>
-  </div><!-- End Indicators -->
-</section>
+  <body>
+    <header>
+      <div class="top-row">
+        <div class="switch">
+          <div class="flicker"></div>
+          <div class="moon"></div>
+        </div>
+        <!--End Switch-->
+        <nav>
+          <div class="menu-icon-container">
+            <div class="hamburger" onclick="show()">
+              <i class="bx bx-menu" onclick="changeIcon(this)"></i>
+            </div>
+            <!--End Hamburger-->
+          </div>
+          <!--End menu-icon-container-->
+          <div class="navigation">
+            <ul class="nav__list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">My Services</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#project">Projects</a></li>
+            </ul>
+            <!--End Nav__List-->
+          </div>
+          <!--End Navigation-->
+        </nav>
+        <!--End Nav-->
+      </div>
+      <!--End Top Row-->
+    </header>
+    <!--Introduction-->
+    <section class="intro padding home-container" id="home">
+      <div class="home-left-col">
+        <h1 class="title-intro">Hi, I am Renata!</h1>
+        <!--End Title-Intro-->
+        <p>
+          Passionate front-end developer with hands-on experience in integrating
+          crucial features such as SEO, Google Analytics, and email marketing.
+          Eager to create exceptional digital experiences. I'm a very
+          disciplined individual and doesn't give up when things get hard. I
+          find other ways of doing them.
+        </p>
+        <div class="flex flex-btn">
+          <a
+            class="btn-dark"
+            id="project-btn"
+            href="#project"
+            aria-label="Projects"
+            >Projects<i class="bx bx-right-arrow-alt"></i
+          ></a>
+          <a
+            class="btn"
+            href="./assets/Renata-Reinartz-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferer"
+            >View my CV<i class="bx bx-right-arrow-alt"></i
+          ></a>
+        </div>
+      </div>
+      <!--End left-col-->
+      <div class="home-right-col">
+        <div class="flex">
+          <img
+            src="assets/dev-renata-03.png"
+            alt="a picture of Renata Reinartz smiling"
+            class="intro__img"
+          />
+        </div>
+        <!--End Flex-->
+      </div>
+      <!--End right-col-->
+    </section>
+    <!--End Home-->
+    <!-- My Services -->
+    <section class="my-services padding" id="services">
+      <h2 class="title-services" id="title-accent">What I do</h2>
+      <div class="services">
+        <ul class="service">
+          <li><i class="bx bx-code-alt"></i></li>
+          <li><h3>Development</h3></li>
+          <li>Experience developing custom coded sites</li>
+          <li>Tech Stack: CSS, HTML, JavaScript, and React framework</li>
+          <li>Following SEO best practices.</li>
+        </ul>
+        <!-- End Service -->
+        <ul class="service">
+          <li><i class="bx bxl-wordpress"></i></li>
+          <li><h3>WordPress</h3></li>
+          <li>Create custom WordPress sites.</li>
+          <li>Tech Stack: WordPress, Elementor, and Divi</li>
+          <li>Yoast plug-in for SEO</li>
+        </ul>
+        <!-- End Service -->
+        <ul class="service">
+          <li><i class="bx bx-globe"></i></li>
+          <li><h3>Extra</h3></li>
+          <li>Setting up your Google Analytics</li>
+          <li>Linking your email marketing system to your website</li>
+        </ul>
+        <!-- End Service -->
+      </div>
+      <!-- End Services -->
+    </section>
+    <!-- End My-Services -->
 
-	<!-- Toolkit -->
-	<hr></hr>
-	<section class="tools padding" id="toolkit">
-		<h2 class="title-tools" id="title-dark">My toolkit</h2>
-		<div class="icons">
-			<div class="grid-container">
-				<div class="toolkit-icon">
-					<i class='bx bxl-github'></i>
-					<p>GIT</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-wordpress'></i>
-					<p>WordPress</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-html5'></i>
-					<p>HTML5</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-css3'></i>
-					<p>CSS</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-sass'></i>
-					<p>SASS</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-netlify'></i>
-					<p>Netlify</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-javascript'></i>
-					<p>ES6</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-react'></i>
-					<p>REACT</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon">
-					<i class='bx bxl-firebase'></i>
-					<p>Firebase</p>
-				</div><!-- End Icon -->
-				<div class="toolkit-icon none">
-					<i class='bx bxl-mailchimp'></i>
-					<p>Mailchimp</p>
-				</div><!-- End Icon -->
-			</div><!-- End Grid-Container -->
-		</div><!-- End Icons -->
-	</section><!-- End Toolkit -->
-	<!-- My Project-->
-	<section class="project-section padding" id="project">
-		<h2 class="title-project">Recent Projects</h2>
-		<div class="project__container bd-grid">
-			<div class="project__data">
-				<div class="project__img">
-					<img src="assets/portfolio-one.png" alt="Project 1">
-				</div>
-				<div class="icon stack">
-					<i class='bx bxl-html5 project-icon'></i>
-					<p>HTML</p>
-					<i class='bx bxl-sass project-icon'></i>
-					<p>SASS</p>
-					<i class='bx bxl-javascript project-icon'></i>
-					<p>ES 6</p>
-				</div><!-- End Icon Stack -->
-				<h4 class="project__title">Animal Match App</h4>
-				<p class="hide">This lighthearted app matches an animal photo with the user's personality using the
-					Pexels API. Developed and designed collaboratively. </p>
-				<div class="link-btn">
-					<a class="project-btn" id="netlify-btn" href="https://animal-match.netlify.app/" target="_blank"
-						class="project__link" aria-label="Animal Match Site"><i class='bx bx-link-alt bx-icon'></i></a>
-					<a class="project-btn" id="git-btn" href="https://github.com/renata-fiona/animal-match-app"
-						aria-label="Animal Match Code" target="_blank" class="project__link">
-						<i class='bx bx-code bx-icon'></i></a>
-				</div><!-- End Link -->
-			</div><!-- End Project__Data -->
-			<div class="project__data">
-				<div class="project__img">
-					<img src="assets/portfolio-two.png" alt="Project 2">
-				</div><!-- End Project__Img-->
-					<div class="icon stack">
-						<i class='bx bxl-html5 project-icon'></i>
-						<p>HTML</p>
-						<i class='bx bxl-sass project-icon'></i>
-						<p>SASS</p>
-						<i class='bx bxl-javascript project-icon'></i>
-						<p>ES 6</p>
-					</div><!-- End Icon Stack -->
-					<h4 class="project__title">Makeup App</h4>
-					<p class="hide">An elegantly designed e-commerce website using React and the makeup API. Includes a
-						scroll to top feature and a functional shopping cart.</p>
-					<div class="link-btn">
-						<a class="project-btn" id="netlify-btn" a href="https://makeup4life.netlify.app/"
-							aria-label=" Makeup Store" target="_blank" class="project__link"><i class='bx bx-link-alt bx-icon'></i></a>
-						<a class="project-btn" id="git-btn"
-							href="https://github.com/renata1026/makeup-ecommerce-store" aria-label="Makeup Code"
-							target="_blank" class="project__link">
-							<i class='bx bx-code'></i></a>
-					</div><!-- End Link -->
-				</div><!-- End Project__Data -->
-				<div class="project__data">
-			<div class="project__img">
-				<img src="assets/portfolio-three.png" alt="Project 3">
-			</div><!-- End Project__Img-->
-				<div class="icon stack">
-					<i class='bx bxl-react project-icon'></i>
-					<p>React</p>
-					<i class='bx bxl-sass project-icon'></i>
-					<p>SASS</p>
-					<i class='bx bxl-firebase project-icon'></i>
-					<p>Firebase</p>
-				</div><!-- End Icon Stack -->
-					<h4 class="project__title">Find your podcast</h4>
-					<p class="hide">A fun app where the user selects the length of their podcast and genre of podcast
-						using the listen notes API.</p>
-					<div class="link-btn">
-						<a class="project-btn" id="netlify-btn" href="https://podcast-planner-app.netlify.app/"
-							aria-label="Podcast Planner site" target="_blank" class="project__link">
-							<i class='bx bx-link-alt bx-icon'></i></a>
-						<a class="project-btn" id="git-btn" a href="https://github.com/Podcast-Planner/podcast-planner"
-							aria-label="Podcast Planner code" target="_blank" class="project__link">
-							<i class='bx bx-code bx-icon'></i></a>
-					</div><!-- End Link -->
-				</div><!-- End Project__Data -->
-		<div class="project__data">
-			<div class="project__img">
-				<img src="assets/portfolio-four.png" alt="Project 4">
-			</div><!-- End Project__Img-->
-			<div class="icon stack">
-				<i class='bx bxl-html5 project-icon'></i>
-				<p>HTML</p>
-				<i class='bx bxl-css3 project-icon'></i>
-				<p>CSS</p>
-				<i class='bx bxl-react project-icon'></i>
-				<p>React</p>
-			</div><!-- End Icon Stack -->
-					<h4 class="project__title">Birds of Paradise</h4>
-					<p class="hide">Are you a bird lover? This eye-catching landing page is for you. A landing page that
-						is functional and responsive.</p>
-					<div class="social-icons">
-						<div class="link-btn">
-							<a class="project-btn" id="netlify-btn" href="https://beautiful-birds.netlify.app/"
-								aria-label="Beautiful Birds site" target="_blank" class="project__link">
-								<i class='bx bx-link-alt bx-icon'></i></a>
-							<a class="project-btn" id="git-btn" a href="https://github.com/renata1026/birds-of-paradise"
-								aria-label="Beautiful Birds Code" target="_blank" class="project__link">
-								<i class='bx bx-code bx-icon'></i></a>
-						</div><!-- End Link -->
-					</div><!-- End Social-Icons -->
-				</div><!-- End Project__Data -->
+    <!--About Me -->
+    <section class="about-me padding" id="about">
+      <div class="about-me__body container">
+        <div class="left-col">
+          <h2 class="title-about-me" id="title-dark">Who I am</h2>
+          <div class="image">
+            <img
+              src="./assets/dev-renata-02.png"
+              alt="a picture of Renata Reinartz smiling"
+              class="about-me__img"
+            />
+          </div>
+          <!-- End Image -->
+        </div>
+        <!-- End left-col -->
+        <div class="right-col">
+          <p class="greeting">
+            Hi there! I'm Renata, a passionate front-end developer with
+            experience in CSS, HTML, JavaScript, and React. Whether you need a
+            custom site or a tailored WordPress site, I'm here to help.
+          </p>
+          <p class="qualifications">
+            I'm a graduate of Juno College's web development immersive bootcamp.
+            I also have a degree in accounting and used to be a CPA, but I got
+            into web development because I love technology and tinkering with
+            systems. Let's build something great together!
+            <!-- End Greeting -->
+          </p>
+          <!-- End Qualifications -->
+          <p class="facts">
+            Fun Fact: I love traveling and have been fortunate to take a year
+            off and travel the world. My favorite activities were rock climbing
+            and yoga. Trying to get back into them! My favorite food is pasta. I
+            love spending time with my family
+          </p>
+          <!-- End Facts -->
+          <div class="flex-btn">
+            <a
+              class="btn"
+              href="./assets/Renata-Reinartz-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferer"
+              >View my CV<i class="bx bx-right-arrow-alt"></i>
+            </a>
+            <a
+              class="btn-dark"
+              id="contact-btn"
+              href="mailto:renata.techy@gmail.com"
+              >Contact<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+        <!--End of right-col-->
+      </div>
+      <!-- End About Me__Body -->
+    </section>
+    <!-- End About Me__Section  -->
+    <!--Timeline -->
+    <section class="timeline">
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2023</h3>
+          <span><i class="bx bx-question-mark"></i></span>
+          <p>
+            I am looking for a front end developer role where I could offer you
+            my unique skillset. I am detail oriented, creative, and am stubborn.
+            I am passionate and give my all. There is no half way commitment.
+            Are you the one? Send me a message I would love to hear from you.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2022-2023</h3>
+          <span>Web Development Immersive Bootcamp</span>
+          <p>
+            I graduated from Juno College's web development immersive bootcamp
+            which was 6 months in length as it included a preparatory web
+            development and javascript course. I currently code 3 hours a night
+            with my coding buddy Hayley where we take turns leading and writing
+            the code using peer programming techniques
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2021-Present</h3>
+          <span>Freelancer</span>
+          <p>
+            Design modern and pleasing WordPress websites using Elementor and
+            Divi. Installation of Google Analytics and integratation of email
+            marketing systems
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2018-2021</h3>
+          <span>Online English Teacher & Evaluator</span>
+          <p>
+            Instructed ESL students in one-to-one and one-to-ten virtual
+            settings using Zoom, with an established English curriculum, and
+            tests that improved students’ English speaking and writing
+            abilities. Reviewed playback of over 1000 teachers and wrote
+            evaluation reports
+          </p>
+        </div>
+      </div>
 
-		</div><!--End Project__Container Bd-Grid-->
-	</section><!--End Project__Section-->
-	<!--Footer-->
-	<footer>
-		<hr>
-		</hr>
-		<div class="footer">
-			<h2 class="title-footer">Get In Touch</h2>
-			<ul class="social-list footer-social">
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://www.linkedin.com/in/renata1026/"
-						aria-label="LinkedIn Profile" target="_blank">
-						<i class='bx bxl-linkedin-square'></i>
-					</a>
-				</li><!--End Social-List__Item-->
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com/renata1026" aria-label="GitHub Profile"
-						target="_blank">
-						<i class='bx bxl-github'></i>
-					</a>
-				</li><!--End Social-List__Item-->
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://calendly.com/rcreinartz/chat" aria-label="Calendly"
-						target="_blank">
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2014-2017</h3>
+          <span>Accounting Manager</span>
+          <p>
+            Converted the company’s software to QuickBooks Pro and implemented
+            an accrual-based accounting system with monthly cutoffs which led to
+            98% more accurate reporting. Created a monthly cash flow report and
+            financial package for the board of directors which led to better
+            spending practices and a more balanced budget
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2015</h3>
+          <span>Chartered Professional Accountant</span>
+          <p>
+            After 2 years of studying post my Bachelors Degree and writing 2
+            days of grueling exams I graduated and received my CPA
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2013</h3>
+          <span>Started a Family</span>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2012</h3>
+          <span>Worldy Experience</span>
+          <p>
+            Took a year off to travel the world including Australia, New
+            Zealand, South East Asia, and other parts of Asia. During this time,
+            I became a certified yoga teacher and rock climbed in many places.
+            It was a great time and I appreciated meeting many people and
+            learning about different cultures
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>Prior to 2012</h3>
+          <span>Senior Financial Analyst</span>
+          <p>
+            Directed a team of five, providing mentorship and instruction
+            Created billion-dollar monthly forecast reports using Khalix
+            Longview, a financial reporting and performance management software
+            integrated with Excel, and monthly reports for the CFO press
+            conferences, ensuring accuracy and timeliness for quarterly and
+            annual shareholder meetings
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial -->
+    <hr />
+    <section class="testimonial-area padding" id="testimonials">
+      <div class="testimonial">
+        <div class="sec-title">
+          <h2 class="title-tes" id="title-dark">Testimonials</h2>
+        </div>
+        <!--End of sec-title-->
+      </div>
+      <!--End of testimonial-->
+      <div class="testimonial-container"></div>
+      <!-- End Testimonial Container -->
+      <div class="indicators">
+        <button class="prev" id="prev">
+          <i class="bx bxs-chevron-left"></i>
+        </button>
+        <div class="indicator-container"></div>
+        <button class="next" id="next">
+          <i class="bx bxs-chevron-right"></i>
+        </button>
+      </div>
+      <!-- End Indicators -->
+    </section>
 
-						<a class="social-list__link" href="https://calendly.com/rcreinartz/chat" aria-label="Calendly"
-							target="_blank">
-							<i class='bx bxs-calendar'></i>
-						</a>
-				</li><!--End Social-List__Item-->
-			</ul><!--End Social-List Footer-Social-->
-			<p>I  🤍  meeting new people. Please feel free to send me an email or book my calendar for a chat.</p>
-			<a class="btn" href="mailto:renata.techie@gmail.com">Let's Chat <i class='bx bx-envelope'></i></a>
-		</div>
-		<p class="copyright">Designed and Developed By Renata Reinartz</a>
-	</footer>
-<script src="script.js"></script>
-</body>
+    <!-- Toolkit -->
+    <hr />
+    <section class="tools padding" id="toolkit">
+      <h2 class="title-tools" id="title-dark">My toolkit</h2>
+      <div class="icons">
+        <div class="grid-container">
+          <div class="toolkit-icon">
+            <i class="bx bxl-github"></i>
+            <p>GIT</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-wordpress"></i>
+            <p>WordPress</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-css3"></i>
+            <p>CSS</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-sass"></i>
+            <p>SASS</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-netlify"></i>
+            <p>Netlify</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-javascript"></i>
+            <p>ES6</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-react"></i>
+            <p>REACT</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon">
+            <i class="bx bxl-firebase"></i>
+            <p>Firebase</p>
+          </div>
+          <!-- End Icon -->
+          <div class="toolkit-icon none">
+            <i class="bx bxl-mailchimp"></i>
+            <p>Mailchimp</p>
+          </div>
+          <!-- End Icon -->
+        </div>
+        <!-- End Grid-Container -->
+      </div>
+      <!-- End Icons -->
+    </section>
+    <!-- End Toolkit -->
+    <!-- My Project-->
+    <section class="project-section padding" id="project">
+      <h2 class="title-project">Recent Projects</h2>
+      <div class="project__container bd-grid">
+        <div class="project__data">
+          <div class="project__img">
+            <img src="assets/portfolio-one.png" alt="Project 1" />
+          </div>
+          <div class="icon stack">
+            <i class="bx bxl-html5 project-icon"></i>
+            <p>HTML</p>
+            <i class="bx bxl-sass project-icon"></i>
+            <p>SASS</p>
+            <i class="bx bxl-javascript project-icon"></i>
+            <p>ES 6</p>
+          </div>
+          <!-- End Icon Stack -->
+          <h4 class="project__title">Animal Match App</h4>
+          <p class="hide">
+            This lighthearted app matches an animal photo with the user's
+            personality using the Pexels API. Developed and designed
+            collaboratively.
+          </p>
+          <div class="link-btn">
+            <a
+              class="project-btn"
+              id="netlify-btn"
+              href="https://animal-match.netlify.app/"
+              target="_blank"
+              class="project__link"
+              aria-label="Animal Match Site"
+              ><i class="bx bx-link-alt bx-icon"></i
+            ></a>
+            <a
+              class="project-btn"
+              id="git-btn"
+              href="https://github.com/renata-fiona/animal-match-app"
+              aria-label="Animal Match Code"
+              target="_blank"
+              class="project__link"
+            >
+              <i class="bx bx-code bx-icon"></i
+            ></a>
+          </div>
+          <!-- End Link -->
+        </div>
+        <!-- End Project__Data -->
+        <div class="project__data">
+          <div class="project__img">
+            <img src="assets/portfolio-two.png" alt="Project 2" />
+          </div>
+          <!-- End Project__Img-->
+          <div class="icon stack">
+            <i class="bx bxl-html5 project-icon"></i>
+            <p>HTML</p>
+            <i class="bx bxl-sass project-icon"></i>
+            <p>SASS</p>
+            <i class="bx bxl-javascript project-icon"></i>
+            <p>ES 6</p>
+          </div>
+          <!-- End Icon Stack -->
+          <h4 class="project__title">Makeup App</h4>
+          <p class="hide">
+            An elegantly designed e-commerce website using React and the makeup
+            API. Includes a scroll to top feature and a functional shopping
+            cart.
+          </p>
+          <div class="link-btn">
+            <a
+              class="project-btn"
+              id="netlify-btn"
+              href="https://makeup4life.netlify.app/"
+              aria-label=" Makeup Store"
+              target="_blank"
+              class="project__link"
+              ><i class="bx bx-link-alt bx-icon"></i
+            ></a>
+            <a
+              class="project-btn"
+              id="git-btn"
+              href="https://github.com/renata1026/makeup-ecommerce-store"
+              aria-label="Makeup Code"
+              target="_blank"
+              class="project__link"
+            >
+              <i class="bx bx-code"></i
+            ></a>
+          </div>
+          <!-- End Link -->
+        </div>
+        <!-- End Project__Data -->
+        <div class="project__data">
+          <div class="project__img">
+            <img src="assets/portfolio-three.png" alt="Project 3" />
+          </div>
+          <!-- End Project__Img-->
+          <div class="icon stack">
+            <i class="bx bxl-react project-icon"></i>
+            <p>React</p>
+            <i class="bx bxl-sass project-icon"></i>
+            <p>SASS</p>
+            <i class="bx bxl-firebase project-icon"></i>
+            <p>Firebase</p>
+          </div>
+          <!-- End Icon Stack -->
+          <h4 class="project__title">Find your podcast</h4>
+          <p class="hide">
+            A fun app where the user selects the length of their podcast and
+            genre of podcast using the listen notes API.
+          </p>
+          <div class="link-btn">
+            <a
+              class="project-btn"
+              id="netlify-btn"
+              href="https://podcast-planner-app.netlify.app/"
+              aria-label="Podcast Planner site"
+              target="_blank"
+              class="project__link"
+            >
+              <i class="bx bx-link-alt bx-icon"></i
+            ></a>
+            <a
+              class="project-btn"
+              id="git-btn"
+              href="https://github.com/Podcast-Planner/podcast-planner"
+              aria-label="Podcast Planner code"
+              target="_blank"
+              class="project__link"
+            >
+              <i class="bx bx-code bx-icon"></i
+            ></a>
+          </div>
+          <!-- End Link -->
+        </div>
+        <!-- End Project__Data -->
+        <div class="project__data">
+          <div class="project__img">
+            <img src="assets/portfolio-four.png" alt="Project 4" />
+          </div>
+          <!-- End Project__Img-->
+          <div class="icon stack">
+            <i class="bx bxl-html5 project-icon"></i>
+            <p>HTML</p>
+            <i class="bx bxl-css3 project-icon"></i>
+            <p>CSS</p>
+            <i class="bx bxl-react project-icon"></i>
+            <p>React</p>
+          </div>
+          <!-- End Icon Stack -->
+          <h4 class="project__title">Birds of Paradise</h4>
+          <p class="hide">
+            Are you a bird lover? This eye-catching landing page is for you. A
+            landing page that is functional and responsive.
+          </p>
+          <div class="social-icons">
+            <div class="link-btn">
+              <a
+                class="project-btn"
+                id="netlify-btn"
+                href="https://beautiful-birds.netlify.app/"
+                aria-label="Beautiful Birds site"
+                target="_blank"
+                class="project__link"
+              >
+                <i class="bx bx-link-alt bx-icon"></i
+              ></a>
+              <a
+                class="project-btn"
+                id="git-btn"
+                href="https://github.com/renata1026/birds-of-paradise"
+                aria-label="Beautiful Birds Code"
+                target="_blank"
+                class="project__link"
+              >
+                <i class="bx bx-code bx-icon"></i
+              ></a>
+            </div>
+            <!-- End Link -->
+          </div>
+          <!-- End Social-Icons -->
+        </div>
+        <!-- End Project__Data -->
+      </div>
+      <!--End Project__Container Bd-Grid-->
+    </section>
+    <!--End Project__Section-->
+    <!--Footer-->
+    <footer>
+      <hr />
+      <div class="footer">
+        <h2 class="title-footer">Get In Touch</h2>
+        <ul class="social-list footer-social">
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://www.linkedin.com/in/renata1026/"
+              aria-label="LinkedIn Profile"
+              target="_blank"
+            >
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://github.com/renata1026"
+              aria-label="GitHub Profile"
+              target="_blank"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://calendly.com/rcreinartz/chat"
+              aria-label="Calendly"
+              target="_blank"
+            >
+              <i class="bx bxs-calendar"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+        </ul>
+        <!--End Social-List Footer-Social-->
+        <p>
+          I 🤍 meeting new people. Please feel free to send me an email or book
+          my calendar for a chat.
+        </p>
+        <a class="btn" href="mailto:renata.techie@gmail.com"
+          >Let's Chat <i class="bx bx-envelope"></i
+        ></a>
+      </div>
+      <p class="copyright">Designed and Developed By Renata Reinartz</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

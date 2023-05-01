@@ -270,6 +270,10 @@ html {
 /*padding*/
 /*desktop font size*/
 /*General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: #000;
@@ -616,7 +620,8 @@ a .hamburger {
 }
 
 .dark,
-.dark #toolkit {
+.dark #toolkit,
+.dark .timeline-content {
   background-color: #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -630,7 +635,8 @@ a .hamburger {
 .dark .facts,
 .dark .hide,
 .dark .testimonial-container .slide p,
-.dark .testimonial-container .slide a {
+.dark .testimonial-container .slide a,
+.dark .timeline-content p {
   color: #fff;
 }
 
@@ -820,10 +826,12 @@ a .hamburger {
 
 /* My services section */
 .my-services {
-  background-image: url(../assets/services-bg.jpg);
+  background-image: url(../assets/rock-climbing-pic.jpeg);
   background-color: rgba(0, 0, 0, 0.8);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-position: top;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
   color: #fff;
   text-align: center;
 }
@@ -1004,6 +1012,101 @@ a .hamburger {
           transform: translateY(-50%);
 }
 
+section.timeline {
+  margin: 0;
+  background: url(../assets/mountain.jpg) no-repeat center fixed;
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccd1d9;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #4fc1e9;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  color: #000;
+}
+
+.timeline-content p {
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
 /* Toolkit section */
 #toolkit {
   background-color: #F3F6FA;
@@ -1486,10 +1589,6 @@ footer span,
     padding: 1em 2em;
     opacity: 0.8;
     border-radius: 1%;
-  }
-  .service li {
-    list-style-type: disc;
-    text-align: left;
   }
   .toolkit-icon .bx,
   .service .bx {

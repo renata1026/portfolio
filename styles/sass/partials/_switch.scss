@@ -31,7 +31,8 @@
   filter: grayscale(0%);
 }
 .dark,
-.dark #toolkit {
+.dark #toolkit,
+.dark .timeline-content {
   background-color: $clr-dark;
   transition: 0.3s;
   color: $clr-light;
@@ -43,7 +44,8 @@
 .dark .facts,
 .dark .hide,
 .dark .testimonial-container .slide p,
-.dark .testimonial-container .slide a {
+.dark .testimonial-container .slide a,
+.dark .timeline-content p {
   color: $clr-light;
 }
 .dark #title-accent,
