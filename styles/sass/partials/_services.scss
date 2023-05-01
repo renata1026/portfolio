@@ -1,6 +1,11 @@
 @use 'variables' as *;
 
 /* My services section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 1.5em;
+}
 
 .my-services {
   background-image: url(../assets/rock-climbing-pic.jpeg);
@@ -8,19 +13,23 @@
   background-size: cover;
   background-position: top;
   filter: grayscale(100);
-  color: $clr-light;
   text-align: center;
+}
+.service {
+  margin: 0 auto;
+  height: 100%;
+  min-width: 400px;
+  color: black;
+  background: white;
+  padding: 1em;
+  opacity: 0.8;
+  border-radius: 1%;
+  width: 100%;
 }
 
 .title {
   color: $clr-accent;
   position: relative;
-}
-
-.service {
-  max-width: 500px;
-  margin: 0 auto;
-  padding-left: 0;
 }
 
 .my-services li {

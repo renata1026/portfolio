@@ -825,6 +825,12 @@ a .hamburger {
 }
 
 /* My services section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 1.5em;
+}
+
 .my-services {
   background-image: url(../assets/rock-climbing-pic.jpeg);
   background-color: rgba(0, 0, 0, 0.8);
@@ -832,19 +838,24 @@ a .hamburger {
   background-position: top;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
-  color: #fff;
   text-align: center;
+}
+
+.service {
+  margin: 0 auto;
+  height: 100%;
+  min-width: 400px;
+  color: black;
+  background: white;
+  padding: 1em;
+  opacity: 0.8;
+  border-radius: 1%;
+  width: 100%;
 }
 
 .title {
   color: #7ce75a;
   position: relative;
-}
-
-.service {
-  max-width: 500px;
-  margin: 0 auto;
-  padding-left: 0;
 }
 
 .my-services li {
@@ -1579,16 +1590,6 @@ footer span,
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 1.5em;
-  }
-  .service {
-    margin: 0 auto;
-    height: 100%;
-    min-width: 300px;
-    color: black;
-    background: white;
-    padding: 1em 2em;
-    opacity: 0.8;
-    border-radius: 1%;
   }
   .toolkit-icon .bx,
   .service .bx {
