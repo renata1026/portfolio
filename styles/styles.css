@@ -689,6 +689,11 @@ a .hamburger {
   color: #000;
 }
 
+.dark .service {
+  background-color: #000;
+  color: #fff;
+}
+
 .dark .links {
   color: #e75a7c;
 }
