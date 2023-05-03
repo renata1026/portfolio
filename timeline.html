@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Renata</title>
+
+    <!--Add Boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Add Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Add Stylesheet-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Dev Portfolio</title>
+    <!--Add Favicon-->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-row">
+        <div class="switch">
+          <div class="flicker"></div>
+          <div class="moon"></div>
+        </div>
+        <!--End Switch-->
+        <nav>
+          <div class="menu-icon-container">
+            <div class="hamburger" onclick="show()">
+              <i class="bx bx-menu" onclick="changeIcon(this)"></i>
+            </div>
+            <!--End Hamburger-->
+          </div>
+          <!--End menu-icon-container-->
+          <div class="navigation">
+            <ul class="nav__list">
+              <li class="active"><a href="timeline.html">Home</a></li>
+              <li><a href="index.html">My Services</a></li>
+              <li><a href="index.html">About me</a></li>
+              <li><a href="index.html">Testimonials</a></li>
+              <li><a href="index.html">Projects</a></li>
+            </ul>
+            <!--End Nav__List-->
+          </div>
+          <!--End Navigation-->
+        </nav>
+        <!--End Nav-->
+      </div>
+      <!--End Top Row-->
+    </header>
+    <!--Timeline -->
+    <section class="timeline" id="timeline">
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2023</h3>
+          <span>Looking for a web developer job. Are you the one? </span>
+          <img
+            class="question"
+            src="./assets/question-mark.png"
+            alt="question mark"
+            loading="lazy"
+          />
+          <p>
+            Hey there! I'm a <em>detail-oriented and creative</em> front-end dev
+            who puts their all into their work. I'm super passionate and
+            dedicated - <em>no half measures here!</em> If you're on the hunt
+            for a teammate who's a perfect match, give me a shout. Let's connect
+            and see if we vibe!
+            <a class="btn-dark" href="mailto:renata.techie@gmail.com"
+              >Contact Me
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2022-2023</h3>
+          <span>Web Development Immersive Bootcamp</span>
+          <img
+            class="square"
+            src="./assets/certificate.png"
+            alt="web development certificate"
+            loading="lazy"
+          />
+          <p>
+            I graduated from Juno College's
+            <strong>Immersive Web Dev Bootcamp </strong>(with some
+            <em>Web Dev and JS prep course</em> thrown in for good measure!)
+            <br />
+            Now, every night, I team up with my coding bud, and we spend 3 hours
+            tackling code together. We take turns leading and writing, using
+            peer programming techniques to crush it <br />!It's a blast
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2021-Present</h3>
+          <span>Freelancer</span>
+          <p>
+            I craft sleek, stylish <em>WordPress</em> sites using Elementor and
+            Divi. I'll even set up Google Analytics and hook you up with an
+            email marketing system. Plus, I get my
+            <em>React fix daily through building projects</em>. Ready to code
+            your site to perfection!
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2018-2021</h3>
+          <span>Online English Teacher & Evaluator</span>
+          <p>
+            Taught ESL students via Zoom in both 1-to-1 and 1-to-10 settings,
+            following a structured English curriculum and tests that helped
+            improve their speaking and writing skills. Also reviewed 1000+
+            teacher recordings and wrote evaluation reports
+          </p>
+        </div>
+      </div>
+      <!-- <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2017</h3>
+          <p>Rascal number two came into my life.</p>
+          <img src="./assets/daughter.png" alt="daughter with a dog" />
+        </div>
+      </div> -->
+      <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2014-2017</h3>
+          <span>Accounting Manager</span>
+          <p>
+            Switched company software to QuickBooks Pro, implemented
+            accrual-based accounting with monthly cutoffs for 98% more accurate
+            reporting. Monthly cash flow report and financial package for board
+            of directors led to better spending practices and budget balance.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2015</h3>
+          <span>Chartered Professional Accountant</span>
+          <p>
+            Woo! Two years of intense studying post-bachelors, plus two grueling
+            days of exams, and <strong>I'm proud to say I'm a CPA</strong>
+          </p>
+        </div>
+      </div>
+      <!-- <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2013</h3>
+          <img
+            src="./assets/mom-and-son.jpeg"
+            alt="mother and son"
+            loading="lazy"
+          />
+          <span>Started a family. Rascal number one came into my life</span>
+        </div>
+      </div> -->
+      <!-- <div class="timeline-block timeline-block-right">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>2012</h3>
+          <span>Worldy Experience</span>
+          <div class="flex-col">
+            <img src="./assets/yoga.jpeg" alt="yoga pose" loading="lazy" />
+            <img
+              src="./assets/climbing.jpeg"
+              alt="rock climbing"
+              loading="lazy"
+            />
+          </div>
+          <p>
+            <strong>Took a year off to travel the world</strong>, hitting up
+            Australia, New Zealand, SE Asia, and other parts of Asia. Got my
+            yoga teacher certification and climbed rocks all over the place. Met
+            tons of cool people, learned about diverse cultures, and had an
+            absolute blast!
+          </p>
+        </div> -->
+      <!-- </div> -->
+      <div class="timeline-block timeline-block-left">
+        <div class="marker"></div>
+        <div class="timeline-content">
+          <h3>Prior to 2012</h3>
+          <span>Senior Financial Analyst and Prior Roles</span>
+          <p>
+            Led a team of 5, mentoring and instructing along the way. Used
+            Khalix Longview to create monthly billion-dollar forecast reports
+            and CFO press conference reports, all integrated with Excel. Ensured
+            top-notch accuracy and timeliness for quarterly and annual
+            shareholder meetings
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <hr />
+      <div class="footer">
+        <h2 class="title-footer">Get In Touch</h2>
+        <ul class="social-list footer-social">
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://www.linkedin.com/in/renata1026/"
+              aria-label="LinkedIn Profile"
+              target="_blank"
+            >
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://github.com/renata1026"
+              aria-label="GitHub Profile"
+              target="_blank"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://calendly.com/rcreinartz/chat"
+              aria-label="Calendly"
+              target="_blank"
+            >
+              <i class="bx bxs-calendar"></i>
+            </a>
+          </li>
+          <!--End Social-List__Item-->
+        </ul>
+        <!--End Social-List Footer-Social-->
+        <p>
+          I 🤍 meeting new people. Please feel free to send me an email or book
+          my calendar for a chat.
+        </p>
+        <a class="btn" href="mailto:renata.techie@gmail.com" target="_blank">
+          Let's Chat <i class="bx bx-envelope"></i>
+        </a>
+      </div>
+      <p class="copyright">Designed and Developed By Renata Reinartz</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
