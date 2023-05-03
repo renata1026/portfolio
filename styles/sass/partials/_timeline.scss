@@ -68,12 +68,10 @@ section.timeline {
 .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
-  //   font-size: 25px;
   font-weight: 500;
 }
 
 .timeline-content span {
-  //   font-size: 15px;
   color: $clr-dark;
 }
 
@@ -95,9 +93,7 @@ section.timeline {
   width: 300px !important;
   border: 1px solid $clr-dark;
 }
-.question {
-  height: 100px !important;
-}
+
 @media screen and (max-width: 768px) {
   .timeline:before {
     left: 8px;

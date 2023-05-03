@@ -1129,10 +1129,6 @@ section.timeline {
   border: 1px solid #000;
 }
 
-.question {
-  height: 100px !important;
-}
-
 @media screen and (max-width: 768px) {
   .timeline:before {
     left: 8px;
