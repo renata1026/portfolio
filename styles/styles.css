@@ -1572,6 +1572,9 @@ footer span,
   .testimonial-container .slide {
     height: 500px;
   }
+  .timeline-content p {
+    text-align: left;
+  }
 }
 @media (min-width: 1000px) {
   h1 {
