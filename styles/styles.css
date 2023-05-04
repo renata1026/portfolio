@@ -282,11 +282,16 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   letter-spacing: 0.2px;
+  overflow-x: hidden;
 }
 
 .padding {
   padding: 5em 2em;
   text-align: center;
+}
+
+.testimonial-area.padding {
+  padding: 5em 1em;
 }
 
 img {
@@ -536,7 +541,7 @@ a .hamburger {
           justify-content: center;
   position: fixed;
   top: 0;
-  right: -100%;
+  left: -100%;
   width: 100%;
   height: 100%;
   background-color: #F3F6FA;
@@ -563,9 +568,22 @@ a .hamburger {
   color: #000;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+header .navigation a:hover,
+header .navigation a:focus {
   color: #e75a7c;
+}
+
+/* Navigation Dark mode */
+.dark .navigation {
+  background: #000;
+}
+
+.dark .navigation a {
+  color: #fff;
+}
+
+.dark .navigation ul li {
+  border-color: white;
 }
 
 .hamburger {
@@ -583,17 +601,21 @@ a .hamburger {
   font-size: 4rem;
 }
 
+/* Hamburger Dark */
+.dark .hamburger .bx {
+  background: black;
+  color: white;
+}
+
 .bx-x {
   font-size: 3em;
-  position: fixed;
-  top: 2%;
-  left: 80%;
+  position: relative;
   z-index: 20;
   color: #000;
 }
 
 .navigation.active {
-  right: 0;
+  left: 0;
 }
 
 .close {
@@ -875,24 +897,45 @@ a .hamburger {
   list-style: none;
 }
 
+/* Giving it relative position so we can place the slide indicators relative to it's height */
+#testimonials {
+  position: relative;
+}
+
 .testimonial-container {
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .testimonial-container .slide {
   position: relative;
-  height: 700px;
+  height: 600px;
   padding: 80px 40px 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-align: center;
   background: #fff;
   margin-top: 80px;
+  display: none;
+  width: 100%;
+}
+
+/* Active Testimonial Slide */
+.testimonial-container .slide.slide-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .testimonial-container .slide:hover {
@@ -1017,23 +1060,22 @@ a .hamburger {
   height: 40px;
   cursor: pointer;
   font-size: 1.1rem;
-  top: -25em;
+  top: calc(50% + 1em + 60px);
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dark #prev,
+.dark #next {
+  color: #fff;
 }
 
 .prev {
-  top: -15em;
   left: 2%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .next {
-  top: -15em;
   right: 2%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 section.timeline {
@@ -1444,6 +1486,48 @@ footer span,
     max-width: 100%;
     height: auto;
   }
+  /* Navigation */
+  .navigation {
+    right: -100%;
+    left: unset;
+  }
+  .navigation.active {
+    right: 0;
+    left: unset;
+  }
+  .navigation ul li:not(:first-child) {
+    margin-top: 2em;
+  }
+  /* Theme Switch */
+  .switch {
+    height: 77px;
+    position: fixed;
+    top: -36px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: top 0.2s ease;
+    transition: top 0.2s ease;
+    cursor: pointer;
+  }
+  .hamburger .bx {
+    background-color: #F3F6FA;
+  }
+  .switch:hover {
+    top: -17px;
+  }
+  .flicker {
+    left: 45px;
+  }
+  .dark .flicker {
+    -webkit-transform: translateX(38px);
+    transform: translateX(-38px);
+  }
+  .moon {
+    top: 15px;
+    left: 15px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   .flex-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1524,6 +1608,9 @@ footer span,
     padding: 10em 8em;
     text-align: center;
   }
+  .testimonial-area.padding {
+    padding: 5em 8em;
+  }
   .about-me.padding {
     padding-top: 0;
   }
@@ -1561,19 +1648,20 @@ footer span,
   }
   .testimonial-container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 20px;
   }
   .testimonial-container .slide {
     position: relative;
     height: 300px;
   }
   .prev {
-    left: 10px;
+    left: 7em;
+  }
+  .next {
+    right: 7em;
   }
   .testimonial-container .slide {
     height: 500px;
-  }
-  .timeline-content p {
-    text-align: left;
   }
 }
 @media (min-width: 1000px) {
@@ -1615,9 +1703,6 @@ footer span,
     font-size: 1.25rem;
     line-height: 1.25em;
   }
-  .navigation.active {
-    right: 0;
-  }
   .navigation ul li {
     text-align: right;
   }
@@ -1639,14 +1724,67 @@ footer span,
   .slide p {
     width: 100%;
   }
-  #next,
-  #prev {
-    top: -20em;
-  }
   .flex-col {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+/* Mobile Only Styles */
+@media (max-width: 800px) {
+  header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: white;
+    z-index: 15;
+    -webkit-box-shadow: 1px -2px 7px black;
+            box-shadow: 1px -2px 7px black;
+  }
+  .dark header {
+    background: black;
+  }
+  .top-row {
+    min-height: 90px;
+  }
+  .switch {
+    width: 70px;
+    height: 35px;
+    top: unset;
+  }
+  .flicker {
+    width: 25px;
+    height: 25px;
+  }
+  .moon {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 35px;
+  }
+  header nav {
+    height: 70px;
+  }
+  .hamburger {
+    color: black;
+    position: static;
+  }
+  .dark .hamburger {
+    color: white;
+  }
+  .home-container {
+    padding-top: 130px;
+  }
+  .dark .flicker {
+    -webkit-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+  .navigation ul {
+    padding: 0px;
+  }
+  .navigation ul li {
+    border-bottom: none;
+    margin-top: 1em;
   }
 }

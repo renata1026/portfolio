@@ -1,24 +1,39 @@
 @use 'variables' as *;
 
+/* Giving it relative position so we can place the slide indicators relative to it's height */
+#testimonials{
+  position: relative;
+}
+
+
 .testimonial-container {
-  //   width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .testimonial-container .slide {
   position: relative;
-  height: 700px;
+  height: 600px;
   padding: 80px 40px 40px;
   transition: 0.5s;
   text-align: center;
   background: $clr-light;
   margin-top: 80px;
+  display: none;
+  width: 100%;
 }
+
+/* Active Testimonial Slide */
+.testimonial-container .slide.slide-active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .testimonial-container .slide:hover {
   background: #f3f6fa;
@@ -131,18 +146,20 @@
   height: 40px;
   cursor: pointer;
   font-size: $fs-body;
-  top: -25em;
-  transform: translateY(-50%);
+  top: calc(50% + 1em + 60px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dark #prev,
+.dark #next{
+  color: #fff;
 }
 
 .prev {
-  top: -15em;
   left: 2%;
-  transform: translateY(-50%);
 }
 
 .next {
-  top: -15em;
   right: 2%;
-  transform: translateY(-50%);
 }

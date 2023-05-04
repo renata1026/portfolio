@@ -13,12 +13,15 @@ body {
   font-size: $fs-body;
   line-height: 1.8;
   letter-spacing: 0.2px;
-  //   max-width: 1600px;
+  overflow-x: hidden;
 }
 
 .padding {
   padding: 5em 2em;
   text-align: center;
+}
+.testimonial-area.padding{
+  padding: 5em 1em;
 }
 
 img {
