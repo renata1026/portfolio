@@ -689,11 +689,6 @@ a .hamburger {
   color: #000;
 }
 
-.dark .service {
-  background-color: #000;
-  color: #fff;
-}
-
 .dark .links {
   color: #e75a7c;
 }
@@ -1132,6 +1127,10 @@ section.timeline {
   height: 200px;
   width: 300px !important;
   border: 1px solid #000;
+}
+
+.question {
+  height: 100px !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -5,15 +5,27 @@ function show() {
 }
 //add the x to change from hamburger icon
 changeIcon = (icon) => icon.classList.toggle('bx-x');
+
+//clicking on a nav link closes the menu and takes user to the section
+if (isLowerScreen()) {
+  let navLinks = document.querySelectorAll('.navigation ul li a');
+  navLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      show();
+      document.querySelector('.hamburger .bx-menu').classList.toggle('bx-x');
+    });
+  });
+}
+
 //dark mode
 const switchElement = document.querySelector('.switch');
 switchElement.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 });
 //Smooth scroll
-const scrollToResult = document.querySelector('#home');
+// const scrollToResult = document.querySelector('#home');
 // Use scrollIntoView() to scroll down to our ID
-scrollToResult.scrollIntoView('#about');
+// scrollToResult.scrollIntoView('#about');
 
 const testimonials = [
   {
@@ -88,37 +100,53 @@ function initializeTestimonialSlider(testimonials) {
 
   let currentSlide = 0;
   display(currentSlide);
-  //Create a function called display.
-  //Display only the current slide.
-  //All other slides will be hidden.
-  function display() {
+
+  // Revised display function for showing two slides
+  function display(currentSlide, way) {
     allSlides.forEach((slide) => {
-      slide.style.display = 'none';
+      slide.classList.remove('slide-active');
     });
-    allSlides[currentSlide].style.display = 'flex';
-    allSlides[currentSlide].style.flexDirection = 'column';
-    allSlides[currentSlide].style.justifyContent = 'center';
+    if (isLowerScreen()) {
+      allSlides[currentSlide].classList.add('slide-active');
+    } else {
+      if (currentSlide == 0) {
+        allSlides[currentSlide].classList.add('slide-active');
+        allSlides[currentSlide + 1].classList.add('slide-active');
+      } else {
+        allSlides[currentSlide].classList.add('slide-active');
+        if (way == 'next') {
+          allSlides[currentSlide + 1].classList.add('slide-active');
+        } else if (way == 'prev') {
+          allSlides[currentSlide - 1].classList.add('slide-active');
+        }
+      }
+    }
   }
-  //Create function nextSlide
-  //When user clicks on next slide it will increment by one to the next slide. If user is on the last slide it will reset to an index of zero and go back to the first slide.
+  // Revised nextSlide function for 2 slides
   function nextSlide() {
     currentSlide++;
-    if (currentSlide > allSlides.length - 1) {
+    if (isLowerScreen() && currentSlide > allSlides.length - 1) {
+      currentSlide = 0;
+    }
+    if (!isLowerScreen() && currentSlide > allSlides.length - 2) {
       currentSlide = 0;
     }
     //Call the function display
-    display(currentSlide);
+    display(currentSlide, 'next');
   }
-  //Create function prevSlide
-  //currentSlide-- to decrement to the prev slide
-  //If user clicks prev slide it will decrement by one to the prev slide. If currentSlide is less than zero it will take you to the last slide.
+  // Revised prevSlide function to work with 2 slides
   function prevSlide() {
     currentSlide--;
     if (currentSlide < 0) {
       currentSlide = allSlides.length - 1;
     }
-    display(currentSlide);
+    display(currentSlide, 'prev');
   }
 }
 
 initializeTestimonialSlider(testimonials);
+
+/* Function that detects lower width devices */
+function isLowerScreen() {
+  return window.matchMedia('(max-width:800px)').matches;
+}
