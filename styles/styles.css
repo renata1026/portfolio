@@ -1133,6 +1133,7 @@ section.timeline {
 }
 
 .timeline-content {
+  margin-top: 10em;
   width: 95%;
   padding: 1em;
   color: #000;
@@ -1169,10 +1170,6 @@ section.timeline {
   height: 200px;
   width: 300px !important;
   border: 1px solid #000;
-}
-
-.question {
-  height: 100px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1662,6 +1659,9 @@ footer span,
   }
   .testimonial-container .slide {
     height: 500px;
+  }
+  .timeline-content {
+    margin-top: unset;
   }
   .timeline-content p {
     text-align: left;
