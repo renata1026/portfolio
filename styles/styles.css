@@ -1666,6 +1666,13 @@ footer span,
   .timeline-content p {
     text-align: left;
   }
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
+  .toolkit-icon {
+    text-align: center;
+  }
 }
 @media (min-width: 1000px) {
   h1 {
@@ -1697,7 +1704,7 @@ footer span,
     margin-top: 2em;
   }
   .project__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 5rem;
   }
   .hide {

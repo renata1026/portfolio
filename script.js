@@ -27,6 +27,65 @@ switchElement.addEventListener('click', () => {
 // Use scrollIntoView() to scroll down to our ID
 // scrollToResult.scrollIntoView('#about');
 
+const toolkitIcons = [
+  {
+    icon: `<i class="bx bxl-wordpress"></i>`,
+    text: 'Wordpress',
+  },
+  {
+    icon: `<i class="bx bxl-html5"></i>`,
+    text: 'HTML5',
+  },
+  {
+    icon: `<i class="bx bxl-css3"></i>`,
+    text: 'CSS',
+  },
+  {
+    icon: `<i class="bx bxl-sass"></i>`,
+    text: 'SASS',
+  },
+  {
+    icon: `<i class="bx bxl-netlify"></i>`,
+    text: 'Netlify',
+  },
+  {
+    icon: `<i class="bx bxl-javascript"></i>`,
+    text: 'ES6',
+  },
+  {
+    icon: `<i class="bx bxl-react"></i>`,
+    text: 'REACT',
+  },
+  {
+    icon: `<i class="bx bxl-firebase"></i>`,
+    text: 'Firebase',
+  },
+  {
+    icon: `<i class="bx bxl-mailchimp"></i>`,
+    text: 'Mailchimp',
+  },
+];
+
+function generateToolkitHTML(toolkitIcon) {
+  return `
+    <div class="toolkit-icon">
+      <i>${toolkitIcon.icon}</i>
+      <p>${toolkitIcon.text}</p>
+    </div><!--End of toolkit-icon-->
+  `;
+}
+
+function initializeToolKit(toolkitIcons) {
+  const toolkitContainer = document.querySelector('.grid-container');
+  toolkitIcons.forEach((icon) => {
+    const toolkitHTML = generateToolkitHTML(icon);
+    toolkitContainer.innerHTML += toolkitHTML;
+  });
+}
+
+// Call the initializeToolKit function with the toolkitIcons array
+initializeToolKit(toolkitIcons);
+
 const testimonials = [
   {
     imgSrc: './assets/josie-peterson.jpg',
@@ -122,7 +181,7 @@ function initializeTestimonialSlider(testimonials) {
       }
     }
   }
-  // Revised nextSlide function for 2 slides
+  // nextSlide function for 2 slides
   function nextSlide() {
     currentSlide++;
     if (isLowerScreen() && currentSlide > allSlides.length - 1) {
@@ -134,7 +193,7 @@ function initializeTestimonialSlider(testimonials) {
     //Call the function display
     display(currentSlide, 'next');
   }
-  // Revised prevSlide function to work with 2 slides
+  // prevSlide function to work with 2 slides
   function prevSlide() {
     currentSlide--;
     if (currentSlide < 0) {
