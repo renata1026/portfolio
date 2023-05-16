@@ -1666,16 +1666,11 @@ footer span,
   .timeline-content p {
     text-align: left;
   }
-  .project__container {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5rem;
-  }
   .project__img {
     width: unset;
   }
   .project__img img {
     max-width: unset;
-    width: unset;
   }
   .toolkit-icon {
     text-align: center;
@@ -1705,6 +1700,10 @@ footer span,
   .toolkit-icon {
     font-size: 3rem;
     text-align: center;
+  }
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
   }
   .project__title {
     font-size: 2rem;
