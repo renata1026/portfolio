@@ -1670,6 +1670,13 @@ footer span,
     grid-template-columns: repeat(2, 1fr);
     row-gap: 5rem;
   }
+  .project__img {
+    width: unset;
+  }
+  .project__img img {
+    max-width: unset;
+    width: unset;
+  }
   .toolkit-icon {
     text-align: center;
   }
@@ -1703,9 +1710,15 @@ footer span,
     font-size: 2rem;
     margin-top: 2em;
   }
-  .project__container {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
+  .project__data {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .project__img {
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
   }
   .hide {
     display: inline;

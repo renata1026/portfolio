@@ -224,6 +224,13 @@
     row-gap: 5rem;
   }
 
+  .project__img {
+    width: unset;
+  }
+  .project__img img {
+    max-width: unset;
+    width: unset;
+  }
   .toolkit-icon {
     text-align: center;
   }
@@ -263,10 +270,14 @@
     font-size: $dt-fs-h4;
     margin-top: 2em;
   }
-  .project__container {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
+
+  .project__data {
+    justify-content: unset;
   }
+  .project__img {
+    flex-grow: unset;
+  }
+
   .hide {
     display: inline;
     color: $clr-dark;
